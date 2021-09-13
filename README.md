@@ -1,6 +1,6 @@
-# Frontend Mentor - My Solution
+# Frontend Mentor - My Solution :computer:
 
-:computer: Here are my solutions to the frontend challenges created by frontend mentor.
+Here are my solutions to the frontend challenges created by frontend mentor.
 
 ## Table of contents
 
@@ -34,7 +34,8 @@ final piece.
 
 ### Newbie
 
-[![<img src="./profile-card-component/screenshot.jpg" width="33"/>](./profile-card-component/screenshot.jpg "Profile card component")](https://carloseam.github.io/frontend-mentor-my-solutions/profile-card-component/)
+[![Profile Card Component](./profile-card-component/screenshot.png "Profile card component")](https://carloseam.github.io/frontend-mentor-my-solutions/profile-card-component/)
+[![Order Summary Component](./profile-card-component/screenshot.png "Order summary component")](https://carloseam.github.io/frontend-mentor-my-solutions/order-summary-component/)
 
 ### Junior
 
