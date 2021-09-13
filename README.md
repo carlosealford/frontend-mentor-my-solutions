@@ -41,7 +41,7 @@ final piece. **Click on an image to view live site.**
 
 ### Junior
 
-_coming soon ..._
+[<img src="./tip-calculator/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/tip-calculator/)
 
 ### Intermediate
 
