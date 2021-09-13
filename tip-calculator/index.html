@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Carlos E Alford @WebShuriken">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <main>
+
+    <!-- TIP CALCULATOR -->
+    <section class="tip-calculator">
+      <!-- calculator title -->
+      <header>
+        <h1 class="tip-calc__title">Spli<br>tter</h1>
+      </header>
+
+      <!-- calculator body -->
+      <div class="tip-calc__body">
+
+        <!-- enter bill panel -->
+        <div class="tip-calc__enter-bill-panel">
+          <h2 class="tip-calc__enter-bill-title tip-calc__panel-title">Bill</h2>
+          <label for="tipCalc-billInput" class="tip-calc__bill-label">
+            <span class="tip-calc__input-label">Enter the bill amount</span>
+            <input id="tipCalc-billInput" class="tip-calc__enter-bill-input tip-calc__input" type="number" min="0" placeholder="0">
+          </label>
+        </div>
+
+        <!-- select tip panel -->
+        <div class="tip-calc__select-tip-panel">
+          <h2 class="tip-calc__select-tip-title tip-calc__panel-title">Select Tip %</h2>
+          <button class="tip-calc__select-tip-button" value="5" data-tip-setter=true type="button" name="tip-5">5%</button>
+          <button class="tip-calc__select-tip-button" value="10" data-tip-setter=true type="button" name="tip-10">10%</button>
+          <button class="tip-calc__select-tip-button" value="15" data-tip-setter=true type="button" name="tip-15">15%</button>
+          <button class="tip-calc__select-tip-button" value="25" data-tip-setter=true type="button" name="tip-25">25%</button>
+          <button class="tip-calc__select-tip-button" value="50" data-tip-setter=true type="button" name="tip-50">50%</button>
+          <label for="tipCalc-tipInput">
+            <span class="tip-calc__input-label">Enter the tip percent you want to pay</span>
+            <input id="tipCalc-tipInput" class="tip-calc__select-tip-input tip-calc__input" data-tip-setter=true type="text" name="tip-custom" value="" placeholder="Custom">
+          </label>
+        </div>
+
+        <!-- number of people panel -->
+        <div class="tip-calc__n-of-people-panel">
+          <h2 class="tip-calc__panel-title">Number of People</h2>
+          <label for="tipCalc-nOfPeopleInput" class="tip-calc__nOfPeople-label">
+            <span class="tip-calc__input-label">Enter number of people to split bill</span>
+            <input id="tipCalc-nOfPeopleInput" class="tip-calc__n-of-people-input tip-calc__input" type="number" name="n-of-people" min="1" max="50" placeholder="0">
+            <span class="tip-calc__input-error-msg">Can't be zero</span>
+          </label>
+        </div>
+
+        <!-- results panel -->
+        <div class="tip-calc__results-panel">
+
+          <!-- tip result area -->
+          <p class="tip-calc__per-person-wrapper">
+            <span class="tip-calc__results-total-title tip-calc__panel-title">Tip Amount </span>
+            <span class="tip-calc__results-total-subtitle">/ person</span>
+            <!-- used by js to display the tip amount -->
+            <span class="tip-calc__per-person-tip tip-calc__per-person-total">$0.00</span>
+          </p>
+
+          <!-- total result area -->
+          <p class="tip-calc__per-person-wrapper">
+            <span class="tip-calc__results-total-title tip-calc__panel-title">Total </span>
+            <span class="tip-calc__results-total-subtitle">/ person</span>
+            <!-- used by js to display the tip amount -->
+            <span class="tip-calc__per-person-amount tip-calc__per-person-total">$0.00</span>
+          </p>
+
+          <!-- reset -->
+          <button class="tip-calc__btn-reset-all" type="button" name="reset" disabled>Reset</button>
+        </div>
+
+      </div>
+    </section><!-- end Tip Calculator -->
+
+  </main>
+
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://carlosealford.com/" target="_blank">Carlos E Alford M</a>.</p>
+  </footer>
+  <!-- calculator script -->
+  <script src="main.js"></script>
+</body>
+</html>
