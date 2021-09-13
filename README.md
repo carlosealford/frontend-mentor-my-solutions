@@ -34,8 +34,8 @@ final piece.
 
 ### Newbie
 
-[![Profile Card Component](./profile-card-component/screenshot.png "Profile card component")](https://carloseam.github.io/frontend-mentor-my-solutions/profile-card-component/)
-[![Order Summary Component](./order-summary-component/screenshot.png "Order summary component")](https://carloseam.github.io/frontend-mentor-my-solutions/order-summary-component/)
+[<img src="./profile-card-component/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/profile-card-component/)
+[<img src="./order-summary-component/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/order-summary-component/)
 
 ### Junior
 
@@ -57,37 +57,13 @@ _coming soon ..._
 
 ## Images in the readme
 
-In case you are curious as to how the images sit next to each other and
-they move when they page is resized. I used the [Github flavored Markdown Spec](https://github.github.com/gfm/#html-blocks).
+Alright, after many attempts the only solution which worked for me was
+the use of the `<img src="" width="" height="">` tag.
 
-I added the images with `![alt-text](image-url)` like so.
+If you use the tag on separate lines without a space between them. The images
+are rendered inline.
 
-**Note:** The images can go on separate lines but don't add a space between
-them or it will break the layout _unless you want the gap in between_.
-
+```html
+<img src="" width="" height="">
+<img src="" width="" height="">
 ```
-![alt-text](image-url)
-![alt-text](image-url)
-```
-
-The image plus some CSS to keep them together. This can go anywhere on the document. The CSS will not be shown on the rendered page.
-
-```CSS
-<style type="text/css">
-p img {
-  display: inline-block;
-  min-width: 180px;
-  width: 30%;
-  margin: 0 auto 3px;
-}
-</style>
-```
-
-<style type="text/css">
-p img {
-  display: inline-block;
-  min-width: 180px;
-  width: 30%;
-  margin: 0 auto 3px;
-}
-</style>
