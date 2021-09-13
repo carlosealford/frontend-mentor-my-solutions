@@ -1,0 +1,84 @@
+// Name: 3 columns preview card
+
+// shared active states
+%active-states
+  background: hsla(var(--neutral-bg-color), 0)
+  border: .15rem solid var(--neutral-bg-color)
+  color: var(--neutral-bg-color)
+  padding: .85rem 1.95rem
+
+/* Holds all the preview cards, display them in a column */
+.vehicles-card
+  --sedams-bg-color: hsl(31, 77%, 52%)
+  --suvs-bg-color: hsl(184, 100%, 22%)
+  --luxury-bg-color: hsl(179, 100%, 13%)
+  --paragraph-color: hsla(0, 0%, 100%, .75)
+  --neutral-bg-color: hsl(0, 0%, 95%)
+  border-radius: 10px
+  display: flex
+  flex-flow: column wrap
+  margin-top: 88px
+  max-width: 922px
+  overflow: hidden
+  width: 328px
+  /* Display the preview cards in a row without wrapping, max 3 cards
+  @media (min-width: 992px)
+    flex-flow: row nowrap
+    margin-top: 44px
+    width: 94%
+
+// Style the preview card
+.v-card
+  padding: 3.2rem 0
+
+.v-card header
+  font-family: 'Big Shoulders Display'
+  padding-left: 49px
+
+.v-card__icon
+  width: 64px
+
+.v-card__title
+  color: var(--neutral-bg-color)
+  font-size: 2.7rem
+  margin-top: 2.1rem
+  text-transform: uppercase
+
+.v-card__body
+  margin-top: 1.6rem
+  padding: 0 3.3rem
+
+.v-card__body p
+  color: var(--paragraph-color)
+  line-height: 1.7rem
+
+.v-card__learn-more
+  background-color: var(--neutral-bg-color)
+  border-radius: 24px
+  display: inline-block
+  margin-top: 1.6rem
+  padding: 1rem 2.1rem
+  transition: background-color .32s, color .32s
+  &:hover
+    @extend %active-states
+  @media (min-width: 1440px)
+    margin-top: 5.6rem
+
+// Cards individual colors
+.v-card__learn-more-sedans
+  color: var(--sedams-bg-color)
+
+.v-card__learn-more-suvs
+  color: var(--suvs-bg-color)
+
+.v-card__learn-more-luxury
+  color: var(--luxury-bg-color)
+
+.v-card-sedans
+  background-color: var(--sedams-bg-color)
+
+.v-card-suvs
+  background-color: var(--suvs-bg-color)
+
+.v-card-luxury
+  background-color: var(--luxury-bg-color)
