@@ -1,0 +1,17 @@
+// base styles
+@use 'base'
+
+// social proof section styles
+@use 'social-proof-section'
+
+:root
+  font-family: 'Spartan', sans-serif
+  font-size: 15px
+
+// page background image
+body
+  background-image: url('./images/bg-pattern-top-mobile.svg'),  url('./images/bg-pattern-bottom-mobile.svg')
+  background-position: left top, right bottom
+  background-repeat: no-repeat
+  @media (min-width: 768px)
+    background-image: url('./images/bg-pattern-top-desktop.svg'),  url('./images/bg-pattern-bottom-desktop.svg')
