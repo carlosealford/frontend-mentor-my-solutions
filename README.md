@@ -39,3 +39,9 @@ final piece.
 ### Intermediate
 
 ### Advanced
+
+## Author
+
+- Website - [Carlos E Alford M](https://carlosealford.com)
+- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
+- Frontend Mentor - [CarlosEAM](https://www.frontendmentor.io/profile/CarlosEAM)
