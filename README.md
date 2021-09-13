@@ -53,3 +53,40 @@ _coming soon ..._
 - Website - [Carlos E Alford M](https://carlosealford.com)
 - Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
 - Frontend Mentor - [CarlosEAM](https://www.frontendmentor.io/profile/CarlosEAM)
+
+## Images in the readme
+
+In case you are curious as to how the images sit next to each other and
+they move when they page is resized. I used the [Github flavored Markdown Spec](https://github.github.com/gfm/#html-blocks).
+
+I added the images with `![alt-text](image-url)` like so.
+
+**Note:** The images can go on separate lines but don't add a space between
+them or it will break the layout _unless you want the gap in between_.
+
+```
+![alt-text](image-url)
+![alt-text](image-url)
+```
+
+The image plus some CSS to keep them together. This can go anywhere on the document. The CSS will not be shown on the rendered page.
+
+```CSS
+<style type="text/css">
+p img {
+  display: inline-block;
+  min-width: 180px;
+  width: 30%;
+  margin: 0 auto 3px;
+}
+</style>
+```
+
+<style type="text/css">
+p img {
+  display: inline-block;
+  min-width: 180px;
+  width: 30%;
+  margin: 0 auto 3px;
+}
+</style>
