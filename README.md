@@ -34,11 +34,19 @@ final piece.
 
 ### Newbie
 
+[![<img src="./profile-card-component/screenshot.jpg" width="33"/>](./profile-card-component/screenshot.jpg "Profile card component")](https://carloseam.github.io/frontend-mentor-my-solutions/profile-card-component/)
+
 ### Junior
+
+_coming soon ..._
 
 ### Intermediate
 
+_coming soon ..._
+
 ### Advanced
+
+_coming soon ..._
 
 ## Author
 
