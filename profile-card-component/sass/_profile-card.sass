@@ -1,0 +1,90 @@
+// Name: Profile Card Component - modular
+
+// colours for the profile card component
+$very-dark-text-color: hsl(229, 23%, 23%)
+$soft-text-color: hsl(227, 10%, 46%)
+$dark-gray: hsl(0, 0%, 59%)
+$dark-gray-opacity: hsla(0, 0%, 59%, .3)
+$card-bg-color: #ffffff
+
+/* profile card component styles */
+.p-card
+  --card-bg-color: #{$card-bg-color}
+  --dark-gray: #{$dark-gray}
+  --dark-gray-opacity: #{$dark-gray-opacity}
+  --soft-text-color: #{$soft-text-color}
+  --very-dark-text-color: #{$very-dark-text-color}
+  background: var(--card-bg-color)
+  border-radius: .8rem
+  box-shadow: 0 4px 28px 0 rgba(45, 50, 72, .24), 0 2px 22px 0px rgba(45, 50, 72, .32)
+  color: var(--very-dark-text-color)
+  height: 374px
+  margin: 0 auto
+  overflow: hidden
+  width: 326px
+  @media (min-width: 1200px)
+    width: 340px
+
+.p-card__img-tab
+  background-image: url('./images/bg-pattern-card.svg')
+  background-repeat: no-repeat
+  background-position-x: -12px
+  height: 140px
+  @media (min-width: 1200px)
+    background-position-x: 0
+
+// header decorates the profile name, age and city
+.p-card__header
+  display: flex
+  flex-wrap: wrap
+  padding-top: 4rem
+
+.p-card__profile-img
+  border: 5px solid var(--card-bg-color)
+  border-radius: 4rem
+  position: absolute
+  transform: translate(110px, -124px)
+  width: 104px
+  @media (min-width: 1200px)
+    transform: translate(118px, -124px)
+
+.p-card__bio-name
+  font-size: 18px
+  padding-right: .5rem
+  text-align: right
+  width: 64%
+
+.p-card__bio-age
+  color: var(--soft-text-color)
+  width: 36%
+
+.p-card__bio-city
+  color: var(--soft-text-color)
+  font-size: 14px
+  padding-top: .5rem
+  text-align: center
+  width: 100%
+
+// styles the profile statistics
+.p-card__stats-list
+  border-top: 1px solid var(--dark-gray-opacity)
+  display: flex
+  margin-top: 24px
+  padding: 0 1.4rem
+
+.p-card__stats-list-item
+  align-items: center
+  display: inline-flex
+  flex-flow: column wrap
+  flex-grow: 1
+  width: 33.3%
+
+.p-card__stats-list-item--strong
+  font-weight: 700
+  padding-top: 1.3rem
+
+.p-card__stats-list-item--soft
+  color: var(--soft-text-color)
+  font-size: 11px
+  letter-spacing: 1px
+  padding-top: .2rem

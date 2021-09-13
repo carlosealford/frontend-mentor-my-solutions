@@ -1,0 +1,36 @@
+// base styles for all projects. Allows for custom font family and size
+@mixin rootSpecs($fontFamily: sans-serif, $fontSize: 18px)
+  font-family: $fontFamily, sans-serif
+  font-size: $fontSize
+
+// base styles
+*
+  box-sizing: border-box
+  list-style: none
+  margin: 0
+  padding: 0
+  position: relative
+  text-decoration: none
+
+main
+  align-items: center
+  display: flex
+  flex-flow: column wrap
+  height: 100vh
+  justify-content: center
+
+img
+  height: auto
+  width: 100%
+
+/* footer */
+.attribution
+  bottom: 0
+  font-size: 11px
+  left: 0
+  padding: 16px 0
+  position: absolute
+  text-align: center
+  width: 100%
+  a
+    color: #fff
