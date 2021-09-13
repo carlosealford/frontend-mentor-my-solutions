@@ -30,12 +30,13 @@ developers tackling the same challenges and are stuck.
 ## Solutions
 
 Each solution is separated by the difficulty level and a screenshot of the
-final piece.
+final piece. **Click on an image to view live site.**
 
 ### Newbie
 
 [<img src="./profile-card-component/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/profile-card-component/)
 [<img src="./order-summary-component/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/order-summary-component/)
+[<img src="./stats-preview-card/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/stats-preview-card/)
 
 ### Junior
 
