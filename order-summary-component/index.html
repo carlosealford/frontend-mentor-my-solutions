@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Carlos E Alford @WebShuriken">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Order summary card</title>
+</head>
+<body>
+  <main>
+    <header class="page-header"><h1>Order Summary Component</h1></header>
+
+    <!-- Order Summary Card -->
+    <article class="ordsum-card ordsum-card__shadow">
+      <!-- card header -->
+      <header>
+        <img class="mx-img" src="./images/illustration-hero.svg" aria-hidden="true">
+        <h2 class="ordsum-card__header--title center-text">Order Summary</h2>
+      </header>
+      <!-- card body -->
+      <div class="ordsum-card__body">
+        <!-- plan description -->
+        <p class="ordsum-card__body--desc ordsum-card__desaturated-blue center-text">You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
+        <!-- plan details -->
+        <div class="ordsum-card__body--plan">
+          <img class="ordsum-card__body--plan-img mx-img" src="./images/icon-music.svg" alt="music symbol with grey background">
+          <div class="ordsum-card__body--plan-term">
+            <h3>Annual Plan</h3>
+            <p class="ordsum-card__body--plan-price ordsum-card__desaturated-blue">$59.99/year</p>
+          </div>
+          <button class="ordsum-card__body--plan-link"  type="button" name="proceed">Change</button>
+        </div>
+        <!-- plan proceed or cancel buttons -->
+        <div class="center-text">
+          <a href="#" class="ordsum-card__btn ordsum-card__btn--proceed ordsum-card__shadow">Proceed to Payment</a>
+          <a href="#" class="ordsum-card__btn ordsum-card__btn--cancel ordsum-card__desaturated-blue">Cancel Order</a>
+        </div>
+      </div>
+    </article>
+
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://carlosealford.com/">Carlos E Alford M</a>.
+  </footer>
+</body>
+</html>

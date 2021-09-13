@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+}
+
+body {
+  --dark-blue: hsl(223, 47%, 23%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  background-color: hsl(225, 100%, 94%);
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+  background-image: url('./images/pattern-background-mobile.svg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 32px 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* resuable card styles */
+.center-text {
+  text-align: center;
+}
+
+.mx-img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.ordsum-card__shadow {
+  box-shadow: 0px 6px 32px 0 hsla(224deg 23% 55% / 40%);
+}
+
+.ordsum-card__desaturated-blue {
+  color: var(--desaturated-blue);
+}
+
+.page-header {
+  display: hidden;
+  position: absolute;
+  left: -1000px;
+}
+
+/* unique card styles */
+.ordsum-card {
+  background-color: #fff;
+  border-radius: 22px;
+  margin: 32px auto;
+  max-width: 400px;
+  overflow: hidden;
+  width: 86%;
+}
+
+/* card header */
+.ordsum-card__header--title {
+  color: var(--dark-blue);
+  font-size: 1.4em;
+  font-weight: 900;
+  padding-top: 32px;
+}
+
+/* card body */
+.ordsum-card__body {
+  padding: 16px 22px 32px;
+}
+.ordsum-card__body--desc {
+  font-weight: 500;
+  line-height: 26px;
+  padding: 0 2px 22px;
+}
+.ordsum-card__body--plan {
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  background-color: var(--very-pale-blue);
+  flex-flow: row nowrap;
+  padding: 16px;
+}
+.ordsum-card__body--plan-img {
+  display: block;
+  width: 48px;
+}
+.ordsum-card__body--plan-term {
+  flex-grow: 2;
+  font-weight: 700;
+  padding-left: 16px;
+}
+.ordsum-card__body--plan-term h3 {
+  color: var(--dark-blue);
+  font-size: 1em;
+}
+.ordsum-card__body--plan-price {
+  display: inline-block;
+  font-weight: 500;
+}
+.ordsum-card__body--plan-link {
+  background: none;
+  border: none;
+  color: var(--bright-blue);
+  font-size: 14px;
+  text-decoration: underline;
+  transition: color .22s
+}
+
+/* card buttons */
+.ordsum-card__btn {
+  background-color: #fff;
+  border: none;
+  display: block;
+  font-size: 15px;
+  font-weight: 900;
+  transition: background-color .22s, color .22s;
+  width: 100%;
+}
+.ordsum-card__btn--proceed {
+  background-color: var(--bright-blue);
+  border-radius: 12px;
+  color: #fff;
+  margin: 26px 0 22px;
+  padding: 16px 0;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Active states */
+.ordsum-card__body--plan-link:hover,
+.ordsum-card__btn--proceed:hover,
+.ordsum-card__btn--cancel:hover {
+  cursor: pointer;
+}
+
+.ordsum-card__body--plan-link:hover {
+  color: var(--desaturated-blue);
+}
+.ordsum-card__btn--proceed:hover {
+  background-color: var(--desaturated-blue);
+}
+.ordsum-card__btn--cancel:hover {
+  color: var(--dark-blue);
+}
+
+/* change page background image on larger screens */
+@media screen and (min-width: 768px) {
+  main {
+    background-image: url('./images/pattern-background-desktop.svg');
+  }
+}
