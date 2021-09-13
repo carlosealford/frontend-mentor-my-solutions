@@ -38,6 +38,7 @@ final piece. **Click on an image to view live site.**
 [<img src="./order-summary-component/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/order-summary-component/)
 [<img src="./stats-preview-card/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/stats-preview-card/)
 [<img src="./3-column-preview-card/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/3-column-preview-card/)
+[<img src="./social-proof-section/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/social-proof-section/)
 
 ### Junior
 
