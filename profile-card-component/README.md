@@ -27,13 +27,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-**Mobile screenshot**
-
-![screenshot of the profile card component](./design/mobile-screenshot.jpg)
-
-**Desktop screenshot**
-
-![screenshot of the profile card component](./screenshot.jpg)
+![screenshot of the profile card component](./screenshot.png)
 
 ### Links
 
