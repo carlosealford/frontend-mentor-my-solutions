@@ -35,7 +35,7 @@ final piece.
 ### Newbie
 
 [![Profile Card Component](./profile-card-component/screenshot.png "Profile card component")](https://carloseam.github.io/frontend-mentor-my-solutions/profile-card-component/)
-[![Order Summary Component](./profile-card-component/screenshot.png "Order summary component")](https://carloseam.github.io/frontend-mentor-my-solutions/order-summary-component/)
+[![Order Summary Component](./order-summary-component/screenshot.png "Order summary component")](https://carloseam.github.io/frontend-mentor-my-solutions/order-summary-component/)
 
 ### Junior
 
