@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![preview of cards on desktop](./desktop-screenshot.jpg)
+![preview of cards on desktop](./screenshot.png)
 
 ### Links
 

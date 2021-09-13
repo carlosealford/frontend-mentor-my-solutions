@@ -38,11 +38,7 @@ Your users should be able to:
 
 Here are two screenshot of the final card.
 
-- **Mobile**
-![Screenshot of the mobile version of stats preview card](./design/stats-card-mobile.jpg)
-
-- **Desktop**
-![Sceenshot of the desktop version of stats preview card](./design/stats-card-desktop.jpg)
+![Sceenshot of the desktop version of stats preview card](./screenshot.png)
 
 ### Links
 
