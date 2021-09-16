@@ -1,4 +1,4 @@
-# Frontend Mentor - My Solution :computer:
+# Frontend Mentor - My Solutions :computer:
 
 Here are my solutions to the frontend challenges created by frontend mentor.
 
