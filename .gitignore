@@ -1,2 +1,5 @@
 ## Here are all the files to be ignored by this repo
-research/
+**/research
+**/README-template.md
+**/design
+
