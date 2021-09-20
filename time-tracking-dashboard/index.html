@@ -2,79 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Carlos E Alford M">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
 
-  Report for
-  Jeremy Robson
+    <!-- hold the time tracking dashboard -->
+    <section class="time-tracking-dashboard">
 
-  Daily
-  Weekly
-  Monthly
+      <!-- card with person details -->
+      <article class="ttdash__person-card">
+        <header class="ttdash__person-card-header">
+          <img src="./images/image-jeremy.png" class="ttdash__person-card-profile" alt="profile image">
+          <span class="ttdash__person-card-pre-header">Report for</span>
+          <h1>
+            <span class="ttdash__person-card-name">Jeremy</span>
+            <span class="ttdash__person-card-surname">Robson</span>
+          </h1>
+        </header>
+        <ul class="ttdash__timeframe-list">
+          <li class="ttdash__timeframe-list-item ttdash__timeframe-daily">Daily</li>
+          <li class="ttdash__timeframe-list-item ttdash__timeframe-weekly">Weekly</li>
+          <li class="ttdash__timeframe-list-item ttdash__timeframe-monthly">Monthly</li>
+        </ul>
+      </article>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+      <!--  time card -->
+      <article class="ttdash__time-card ttdash__time-card-work">
+        <span class="ttdash__time-card-banner"></span>
+        <header class="ttdash__time-card-header">
+          <h2>Work</h2>
+          <span>...</span>
+        </header>
+        <ul class="ttdash__times-list">
+          <li class="ttdash__times-list-item ttdash__current-time">32hrs</li>
+          <li class="ttdash__times-list-item ttdash__previous-time">Previous - 128hrs</li>
+        </ul>
+      </article>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+      <!--  time card -->
+      <article class="ttdash__time-card ttdash__time-card-play">
+        <span class="ttdash__time-card-banner"></span>
+        <header class="ttdash__time-card-header">
+          <h2>Play</h2>
+          <span>...</span>
+        </header>
+        <ul class="ttdash__times-list">
+          <li class="ttdash__times-list-item ttdash__current-time">10hrs</li>
+          <li class="ttdash__times-list-item ttdash__previous-time">Previous - 8hrs</li>
+        </ul>
+      </article>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+      <!--  time card -->
+      <article class="ttdash__time-card ttdash__time-card-study">
+        <span class="ttdash__time-card-banner"></span>
+        <header class="ttdash__time-card-header">
+          <h2>Study</h2>
+          <span>...</span>
+        </header>
+        <ul class="ttdash__times-list">
+          <li class="ttdash__times-list-item ttdash__current-time">4hrs</li>
+          <li class="ttdash__times-list-item ttdash__previous-time">Previous - 7hrs</li>
+        </ul>
+      </article>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+      <!--  time card -->
+      <article class="ttdash__time-card ttdash__time-card-exercise">
+        <span class="ttdash__time-card-banner"></span>
+        <header class="ttdash__time-card-header">
+          <h2>Exercise</h2>
+          <span>...</span>
+        </header>
+        <ul class="ttdash__times-list">
+          <li class="ttdash__times-list-item ttdash__current-time">4hrs</li>
+          <li class="ttdash__times-list-item ttdash__previous-time">Previous - 5hrs</li>
+        </ul>
+      </article>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+      <!--  time card -->
+      <article class="ttdash__time-card ttdash__time-card-social">
+        <span class="ttdash__time-card-banner"></span>
+        <header class="ttdash__time-card-header">
+          <h2>Social</h2>
+          <span>...</span>
+        </header>
+        <ul class="ttdash__times-list">
+          <li class="ttdash__times-list-item ttdash__current-time">5hrs</li>
+          <li class="ttdash__times-list-item ttdash__previous-time">Previous - 10hrs</li>
+        </ul>
+      </article>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+      <!--  time card -->
+      <article class="ttdash__time-card ttdash__time-card-self-care">
+        <span class="ttdash__time-card-banner"></span>
+        <header class="ttdash__time-card-header">
+          <h2>Self Care</h2>
+          <span>...</span>
+        </header>
+        <ul class="ttdash__times-list">
+          <li class="ttdash__times-list-item ttdash__current-time">2hrs</li>
+          <li class="ttdash__times-list-item ttdash__previous-time">Previous - 2hrs</li>
+        </ul>
+      </article>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </section>
+
+  </main>
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://carlosealford.com" target="_blank">Carlos E Alford</a>.</p>
+  </footer>
 </body>
 </html>
