@@ -2,5 +2,7 @@
 **/research
 **/README-template.md
 **/design
-**/node_modules
 
+## Code which can be compiled will not be committed
+**/node_modules
+**/dist
