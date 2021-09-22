@@ -1,6 +1,9 @@
 import Data from '../data.json';
 
-let timeTrackingDashboard = (function() {
+/**
+ * @description IIFE Anonymous function
+ */
+(function() {
   let activityTimeframeElem = document.querySelector('.ttdash__timeframe-btn-weekly');
   let activityTimeframe = 'weekly';
   let activityCards = {}
@@ -11,18 +14,28 @@ let timeTrackingDashboard = (function() {
     timeframeBtns.forEach(btn => btn.addEventListener('click', toggleBtn))
   }
 
+  // Toggle the buttons on and off
   function toggleBtn(e) {
     e.preventDefault();
     activityTimeframeElem.removeAttribute('disabled');
     activityTimeframeElem = e.srcElement;
     activityTimeframe = e.srcElement.dataset.timeframe;
     e.srcElement.setAttribute('disabled', true);
+
+    // Update the cards info
     updateActivityCards(e.srcElement.dataset.timeframe);
   }
 
+  // Grab all the card elements to update
   function prepCardElements() {
     const activityElements = document.querySelectorAll('.ttdash__times-list-item');
 
+    /**
+     * Loop through elements to create an object
+     * the object keys are the name of each acitivty which stores an object
+     * the acivity object has two properties, 'current' and 'previous'
+     * each property stores the corresponding HTML element to update.
+     */
     activityElements.forEach(activity => {
       activityCards[activity.parentElement.dataset.cardActivity] = {
         ...activityCards[activity.parentElement.dataset.cardActivity],
@@ -31,6 +44,7 @@ let timeTrackingDashboard = (function() {
     });
   }
 
+  // Loop through each activity card to update its information
   function updateActivityCards(timeframe) {
     Data.forEach(activity => {
       let currentTime = (activity.timeframes[activityTimeframe].current > 1)
@@ -48,10 +62,6 @@ let timeTrackingDashboard = (function() {
     });
   }
 
-  function updateCard(card) {
-    const activityCards = document.querySelectorAll('.ttdash__times-list-item');
-  }
-
   setListeners();
   prepCardElements();
-})();
+}());
