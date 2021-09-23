@@ -1,3 +1,4 @@
+import "./style.sass";
 import Data from '../data.json';
 
 /**
