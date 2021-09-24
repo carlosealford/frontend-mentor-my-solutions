@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/CarlosEAM/frontend-mentor-my-solutions/tree/main/time-tracking-dashboard)
-- Live URL: [Tip Calculator Site](https://carloseam.github.io/frontend-mentor-my-solutions/time-tracking-dashboard/dist/)
+- Live URL: [Time Tracking Dashboard](https://carloseam.github.io/frontend-mentor-my-solutions/time-tracking-dashboard/dist/)
 
 ## My process
 
