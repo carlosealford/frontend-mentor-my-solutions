@@ -19,8 +19,10 @@ import Data from '../data.json';
   function toggleBtn(e) {
     e.preventDefault();
     activityTimeframeElem.removeAttribute('disabled');
+    activityTimeframeElem.classList.toggle('ttdash__btn-active');
     activityTimeframeElem = e.srcElement;
     activityTimeframe = e.srcElement.dataset.timeframe;
+    activityTimeframeElem.classList.toggle('ttdash__btn-active');
     e.srcElement.setAttribute('disabled', true);
 
     // Update the cards info
