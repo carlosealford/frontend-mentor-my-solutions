@@ -1,11 +1,45 @@
+// Colours
+$page-bg-color: hsl(226, 43%, 10%)
+$cards-bg-color: hsl(235, 46%, 20%)
+$profile-card-header-bg-color: hsl(235, 45%, 61%)
+$btns-text-color: hsl(235, 45%, 61%)
+$card-hover-bg-color: hsl(235, 45%, 61%)
+$pale-text-color: hsl(236, 100%, 87%)
+
+// time cards banner background colour
+$work-header-bg-color: hsl(15, 100%, 70%)
+$play-header-bg-color: hsl(195, 74%, 62%)
+$study-header-bg-color: hsl(348, 100%, 68%)
+$exercise-header-bg-color: hsl(145, 58%, 55%)
+$social-header-bg-color: hsl(264, 64%, 52%)
+$selfcare-header-bg-color: hsl(43, 84%, 65%)
+
+// Extend
+%pointer-shared
+  cursor: pointer
+
 .time-tracking-dashboard
+  --work-header-color: #{$work-header-bg-color}
+  --play-header-color: #{$play-header-bg-color}
+  --study-header-color: #{$study-header-bg-color}
+  --exercise-header-color: #{$exercise-header-bg-color}
+  --social-header-color: #{$social-header-bg-color}
+  --selfcare-header-color: #{$selfcare-header-bg-color}
+  --cards-bg-color: #{$cards-bg-color}
   display: grid
   grid-template-columns: 1fr
   grid-template-rows: repeat(7, auto)
   grid-row-gap: 1.36rem
+  min-width: 375px
   padding: 4.5rem 1.3rem
+  background-color: $page-bg-color
+  color: #fff
 
-// .ttdash__person-card
+.ttdash__person-card
+  max-width: 580px
+  width: 100%
+  margin: 0 auto
+  background-color: $cards-bg-color
 
 /* header */
 .ttdash__person-card-header
@@ -15,6 +49,7 @@
   grid-column-gap: .3rem
   border-radius: .8rem
   padding: 1.8rem 1.6rem 1.7rem
+  background-color: $profile-card-header-bg-color
   z-index: 20
 
 .ttdash__person-card-profile
@@ -55,11 +90,29 @@
   flex-grow: 1
   font-size: 1rem
   background: none
+  color: $btns-text-color
+  @extend %pointer-shared
+  &:hover
+    color: #fff
+
+.ttdash__btn-active
+  color: #fff
 
 
 /* Time cards */
 .ttdash__time-card
+  max-width: 580px
+  width: 100%
+  margin: 0 auto
   border-radius: .8rem
+  background-color: $cards-bg-color
+  overflow: hidden
+  transition: background-color .22s
+  @extend %pointer-shared
+  &:hover > .ttdash__times-list
+    background-color: $card-hover-bg-color
+  &:hover > .ttdash__time-card-header
+      background-color: $card-hover-bg-color
 
 .ttdash__time-card-banner
   display: block
@@ -74,6 +127,7 @@
   border-top-right-radius: .8rem
   margin-top: -1.2rem
   padding: 1.48rem 1.3rem 0
+  background-color: $cards-bg-color
 
 .ttdash__time-card-header h2
   font-size: 1rem
@@ -82,6 +136,9 @@
   margin-top: -1rem
   font-size: 2rem
   letter-spacing: -1px
+  color: $pale-text-color
+  &:hover
+    color: #fff
 
 .ttdash__times-list
   display: flex
@@ -95,3 +152,24 @@
   margin-top: .6rem
   font-size: .88rem
   word-spacing: -1px
+
+.ttdash__previous-time
+  color: $pale-text-color
+
+.ttdash__time-card-work
+  background: var(--work-header-color) url('./images/icon-work.svg') no-repeat 92% 58%
+
+.ttdash__time-card-play
+  background: var(--play-header-color) url('./images/icon-play.svg') no-repeat 92% 58%
+
+.ttdash__time-card-study
+  background: var(--study-header-color) url('./images/icon-study.svg') no-repeat 92% 58%
+
+.ttdash__time-card-exercise
+  background: var(--exercise-header-color) url('./images/icon-exercise.svg') no-repeat 92% 58%
+
+.ttdash__time-card-social
+  background: var(--social-header-color) url('./images/icon-social.svg') no-repeat 92% 58%
+
+.ttdash__time-card-selfcare
+  background: var(--selfcare-header-color) url('./images/icon-self-care.svg') no-repeat 92% 58%
