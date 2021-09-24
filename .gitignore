@@ -5,7 +5,6 @@
 
 ## Code which can be compiled will not be committed
 **/node_modules
-**/dist
 
 ## Dont track images from the src folder in the Time Tracking Dashboard
 time-tracking-dashboard/src/images/
