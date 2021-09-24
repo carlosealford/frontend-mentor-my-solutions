@@ -14,6 +14,11 @@ $exercise-header-bg-color: hsl(145, 58%, 55%)
 $social-header-bg-color: hsl(264, 64%, 52%)
 $selfcare-header-bg-color: hsl(43, 84%, 65%)
 
+// Mixins
+@mixin grid-row-col($col: 1 / 2, $row: 1 / 2)
+  grid-column: $col
+  grid-row: $row
+
 // Extend
 %pointer-shared
   cursor: pointer
