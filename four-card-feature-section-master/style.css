@@ -118,6 +118,83 @@
     justify-self: start;
   }
 }
+@media (min-width: 1024px) {
+  .fcf__title {
+    font-size: 2rem;
+  }
+
+  .fcf__subtitle {
+    font-size: 2rem;
+  }
+
+  .fcf__body {
+    grid-template-columns: repeat(3, minmax(315px, 350px));
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+  }
+
+  .fcf__card-supervisor {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  .fcf__card-team-builder {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .fcf__card-karma {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+
+  .fcf__card-calculator {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+}
+@media (min-width: 1440px) {
+  .fcf__header {
+    padding: 0.2rem 0;
+  }
+
+  .fcf__title {
+    font-size: 2.4rem;
+  }
+
+  .fcf__subtitle {
+    margin-top: -0.2rem;
+    font-size: 2.4rem;
+  }
+
+  .fcf__header > p {
+    padding: 1rem;
+    word-spacing: 2px;
+  }
+
+  .fcf__body {
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  .fcf__card-body {
+    padding: 0.7rem 0;
+  }
+
+  .fcf__card-body > img {
+    width: 62px;
+    margin-top: 2.7rem;
+    margin-right: 0.2rem;
+  }
+
+  .fcf__card-supervisor {
+    justify-self: center;
+  }
+
+  .fcf__card-calculator {
+    justify-self: center;
+  }
+}
 * {
   position: relative;
   box-sizing: border-box;
