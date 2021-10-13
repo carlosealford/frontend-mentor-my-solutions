@@ -1,7 +1,19 @@
+// Theme colours
+$feature-bg-color: hsl(0, 0%, 98%)
+$supervisor-theme: hsl(180, 62%, 55%)
+$team-builder-theme: hsl(0, 78%, 62%)
+$karma-theme: hsl(34, 97%, 64%)
+$calculator-theme: hsl(212, 86%, 64%)
+$title-text-color: hsl(234, 12%, 34%)
+$text-color: hsl(229, 6%, 66%)
+$card-shadow-color: hsl(234, 12%, 34%)
+$card-bg-color: #fff
+
 /* Implement the four card feature styles */
 .four-card-feature
   max-width: 600px
   padding: 5rem 2rem
+  background: $feature-bg-color
   z-index: 40
 
 /* header for the whole section */
@@ -14,16 +26,19 @@
   font-size: 1.6rem
   font-weight: 200
   word-spacing: 2px
+  color: $title-text-color
 
 .fcf__subtitle
   font-size: 1.6rem
   word-spacing: 2px
+  color: $title-text-color
 
 .fcf__header > p
   padding: 1.2rem 0
   line-height: 25px
   text-align: center
   word-spacing: 1px
+  color: $text-color
 
 /* body part of the whole section */
 .fcf__body
@@ -37,12 +52,15 @@
 /* individual card in the body of the whole section */
 .fcf__card
   max-width: 350px
-  border-top: 4px solid red
+  border-top: 4px solid $supervisor-theme
   border-radius: 6px
   padding: 1.6rem 2rem
+  background: $card-bg-color
+  box-shadow: 0 6px 12px rgba(144, 153, 193, .2), 0 6px 16px rgba(144, 153, 193, .1)
 
 .fcf__card-title
   font-size: 1.3rem
+  color: $title-text-color
 
 .fcf__card-body
   display: flex
@@ -53,11 +71,24 @@
   font-size: .9rem
   line-height: 22px
   word-spacing: -1px
+  color: $text-color
 
 .fcf__card-body > img
   align-self: end
   width: 60px
   margin-top: 2.1rem
+
+.fcf__card-supervisor
+  border-top: 4px solid $supervisor-theme
+
+.fcf__card-team-builder
+  border-top: 4px solid $team-builder-theme
+
+.fcf__card-karma
+  border-top: 4px solid $karma-theme
+
+.fcf__card-calculator
+  border-top: 4px solid $calculator-theme
 
 /* Four card feature Media Queries */
 @media(min-width: 600px)
