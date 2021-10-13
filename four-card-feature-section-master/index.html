@@ -2,44 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Carlos E Alford @WebShuriken">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+  <main>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+    <!-- four card feature -->
+    <section class="four-card-feature">
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+      <!-- four card feature header -->
+      <header class="fcf__header">
+        <h1 class="fcf__title">Reliable, efficient delivery</h1>
+        <h2 class="fcf_subtitle">Powered by Technology</h2>
+        <p>Our Artificial Intelligence powered tools use millions of project data points
+        to ensure that your project is successful</p>
+      </header>
 
-  Karma
-  Regularly evaluates our talent to ensure quality
+      <!-- four card feature body -->
+      <div class="fcf__body">
 
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+        <!-- supervisor card -->
+        <article class="fcf__card">
+          <header>
+            <h3 class="fcf__card-title">Supervisor</h3>
+          </header>
+          <div class="fcf__card-body">
+            <p>Monitors activity to identify project roadblocks</p>
+            <img src="./images/icon-supervisor.svg" alt="icon of a manifiying glass with a visible eye">
+          </div>
+        </article>
 
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+        <!-- team builder card -->
+        <article class="fcf__card">
+          <header>
+            <h3 class="fcf__card-title">Team Builder</h3>
+          </header>
+          <div class="fcf__card-body">
+            <p>Scans our talent network to create the optimal team for your project</p>
+            <img src="./images/icon-team-builder.svg" alt="icon of a red house">
+          </div>
+        </article>
+
+        <!-- karma card -->
+        <article class="fcf__card">
+          <header>
+            <h3 class="fcf__card-title">Karma</h3>
+          </header>
+          <div class="fcf__card-body">
+            <p>Regularly evaluates our talent to ensure quality</p>
+            <img src="./images/icon-karma.svg" alt="icon of a yellow light bulb with a knut inside">
+          </div>
+        </article>
+
+        <!-- calculator card -->
+        <article class="fcf__card">
+          <header>
+            <h3 class="fcf__card-title">Calculator</h3>
+          </header>
+          <div class="fcf__card-body">
+            <p>Uses data from past projects to provide better delivery estimates</p>
+            <img src="./images/icon-calculator.svg" alt="icon of what look like a digital calculator">
+          </div>
+        </article>
+      </div>
+    </section><!-- end four card feature -->
+
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://carlosealford.com/">Carlos E Alford M</a>.
   </footer>
 </body>
 </html>
