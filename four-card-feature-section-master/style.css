@@ -1,3 +1,72 @@
+/* Implement the four card feature styles */
+.four-card-feature {
+  padding: 5rem 2rem;
+  z-index: 40;
+}
+
+/* header for the whole section */
+.fcf__header {
+  padding: 0.6rem;
+}
+
+.fcf__title {
+  font-size: 1.6rem;
+  font-weight: 200;
+  word-spacing: 2px;
+}
+
+.fcf__subtitle {
+  font-size: 1.6rem;
+  word-spacing: 2px;
+}
+
+.fcf__header > p {
+  padding: 1.2rem 0;
+  line-height: 25px;
+  text-align: center;
+  word-spacing: 1px;
+}
+
+/* body part of the whole section */
+.fcf__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+  row-gap: 1.4rem;
+  padding: 3.1rem 0;
+}
+
+/* individual card in the body of the whole section */
+.fcf__card {
+  max-width: 350px;
+  border-top: 4px solid red;
+  border-radius: 6px;
+  padding: 1.6rem 2rem;
+}
+
+.fcf__card-title {
+  font-size: 1.3rem;
+}
+
+.fcf__card-body {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0.3rem 0;
+}
+
+.fcf__card-body > p {
+  font-size: 0.9rem;
+  line-height: 22px;
+  word-spacing: -1px;
+}
+
+.fcf__card-body > img {
+  align-self: end;
+  width: 60px;
+  margin-top: 2.1rem;
+}
+
 * {
   position: relative;
   box-sizing: border-box;
