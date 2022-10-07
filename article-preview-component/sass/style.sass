@@ -4,11 +4,71 @@ main
   padding: .6rem
   background: var(--light-grey-blue)
 
+.cards-holder
+  padding: 5rem 1rem 2rem
+
 .card
+  display: flex
+  flex-flow: column nowrap
+  border-radius: .7rem
+  height: 512px
+  width: 328px
   background: #fff
   overflow: hidden
 
 .card-header
-  height: 248px
+  height: 15.5rem
   background-image: url('../images/drawers.jpg')
   background-size: cover
+  background-position: 2px -16px
+
+.card-body
+  position: relative
+  padding: 2.7rem 2.8rem 1rem
+  p:nth-child(2)
+    padding-top: 1rem
+    line-height: 20px
+
+.distinct-text
+  font-size: 1.2rem
+  font-weight: 700
+  line-height: 24px
+  word-spacing: 2px
+
+// Profile card
+%profile-images
+  align-self: center
+  border-radius: 50%
+
+.profile-card
+  display: grid
+  grid-template-columns: 76px auto 62px
+  grid-template-rows: 38px 38px
+  grid-template-areas: "profile profilename sharebutton" "profile profiledate sharebutton"
+  column-gap: 1.2rem
+  row-gap: .1rem
+  height: 76px
+  .profile-card-img
+    @extend %profile-images
+    grid-area: profile
+    justify-self: end
+    width: 40px
+  .profile-card-name
+    align-self: end
+    grid-area: profilename
+    font-weight: 700
+  .profile-card-date
+    align-self: start
+    grid-area: profiledate
+  .profile-card-share-img
+    @extend %profile-images
+    grid-area: sharebutton
+    height: 32px
+    width: 32px
+    padding: .6rem
+    overflow: hidden
+    background-color: var(--light-grey-blue)
+
+.share-card
+  position: absolute
+  display: none

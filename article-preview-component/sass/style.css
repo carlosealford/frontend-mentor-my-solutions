@@ -9,7 +9,8 @@
 }
 
 :root {
-  font-size: 18px;
+  font-family: "Manrope";
+  font-size: 13px;
   --dark-grey-blue: hsl(217, 19%, 35%);
   --dark-blue: hsl(214, 17%, 51%);
   --grey-blue: hsl(212, 23%, 69%);
@@ -29,7 +30,7 @@ img {
   width: 100%;
 }
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: #3e52a3;
 }
 @media (min-width: 1440px) {
   .attribution {
@@ -44,13 +45,83 @@ main {
   background: var(--light-grey-blue);
 }
 
+.cards-holder {
+  padding: 5rem 1rem 2rem;
+}
+
 .card {
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 0.7rem;
+  height: 512px;
+  width: 328px;
   background: #fff;
   overflow: hidden;
 }
 
 .card-header {
-  height: 248px;
+  height: 15.5rem;
   background-image: url("../images/drawers.jpg");
   background-size: cover;
-}/*# sourceMappingURL=style.css.map */
+  background-position: 2px -16px;
+}
+
+.card-body {
+  position: relative;
+  padding: 2.7rem 2.8rem 1rem;
+}
+.card-body p:nth-child(2) {
+  padding-top: 1rem;
+  line-height: 20px;
+}
+
+.distinct-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 24px;
+  word-spacing: 2px;
+}
+
+.profile-card .profile-card-share-img, .profile-card .profile-card-img {
+  align-self: center;
+  border-radius: 50%;
+}
+
+.profile-card {
+  display: grid;
+  grid-template-columns: 76px auto 62px;
+  grid-template-rows: 38px 38px;
+  grid-template-areas: "profile profilename sharebutton" "profile profiledate sharebutton";
+  column-gap: 1.2rem;
+  row-gap: 0.1rem;
+  height: 76px;
+}
+.profile-card .profile-card-img {
+  grid-area: profile;
+  justify-self: end;
+  width: 40px;
+}
+.profile-card .profile-card-name {
+  align-self: end;
+  grid-area: profilename;
+  font-weight: 700;
+}
+.profile-card .profile-card-date {
+  align-self: start;
+  grid-area: profiledate;
+}
+.profile-card .profile-card-share-img {
+  grid-area: sharebutton;
+  height: 32px;
+  width: 32px;
+  padding: 0.6rem;
+  overflow: hidden;
+  background-color: var(--light-grey-blue);
+}
+
+.share-card {
+  position: absolute;
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

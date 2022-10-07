@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="sass/style.css">
   
   <title>Frontend Mentor | Article preview component</title>
@@ -19,6 +22,7 @@
       left: 0;
       height: auto;
       width: 100%;
+      opacity: .6
     }
   </style>
 </head>
@@ -43,14 +47,14 @@
         <div class="profile-card">
           <img src="images/avatar-michelle.jpg" alt="mitchell posing outdoor in a misty day" class="profile-card-img">
           <span class="profile-card-name">  
-            <p>
-              Michelle Appleton
-            </p>
+            Michelle Appleton
           </span>
           <span class="profile-card-date">
             28 Jun 2020
           </span>
-          <img src="images/icon-share.svg" alt="share icon arrow" class="profile-card-share-img">
+          <figure class="profile-card-share-img">
+            <img src="images/icon-share.svg" alt="share icon arrow">
+          </figure>
         </div>
         <div class="share-card">
           <p class="share-card-title">
@@ -64,8 +68,8 @@
           <img src="images/icon-share.svg" alt="share icon arrow" class="share-card-share-img">
         </div>
       </article>
-      <img src="images/mobile-design.jpg" alt="" class="temp-img">
     </section>
+    <img src="images/mobile-design.jpg" alt="" class="temp-img">
     
     <footer class="attribution">
       <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
