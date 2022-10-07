@@ -115,7 +115,7 @@ main {
   width: 32px;
   border-radius: 50%;
   padding: 0.6rem;
-  background-color: var(--dark-grey-blue);
+  background-color: var(--light-grey-blue);
   overflow: hidden;
   grid-area: sharebutton;
   align-self: center;
@@ -133,6 +133,11 @@ main {
   width: 100%;
   background: var(--dark-grey-blue);
   color: var(--grey-blue);
+  display: none;
+}
+
+.share-card.show {
+  display: grid;
 }
 
 .share-card-title {

@@ -70,7 +70,7 @@ main
     grid-area: profiledate
     color: var(----dark-blue)
   .profile-card-share-img
-    @include share-button($bgcolor: --dark-grey-blue)
+    @include share-button($bgcolor: --light-grey-blue)
     grid-area: sharebutton
     align-self: center
 
@@ -86,6 +86,10 @@ main
   width: 100%
   background: var(--dark-grey-blue)
   color: var(--grey-blue)
+  display: none
+
+.share-card.show
+  display: grid
 
 .share-card-title
   justify-self: end
