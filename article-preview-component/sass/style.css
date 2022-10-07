@@ -9,8 +9,7 @@
 }
 
 :root {
-  font-family: "Manrope";
-  font-size: 13px;
+  font: 500 13px "Manrope";
   --dark-grey-blue: hsl(217, 19%, 35%);
   --dark-blue: hsl(214, 17%, 51%);
   --grey-blue: hsl(212, 23%, 69%);
@@ -73,6 +72,7 @@ main {
 .card-body p:nth-child(2) {
   padding-top: 1rem;
   line-height: 20px;
+  color: var(--dark-blue);
 }
 
 .distinct-text {
@@ -80,11 +80,7 @@ main {
   font-weight: 700;
   line-height: 24px;
   word-spacing: 2px;
-}
-
-.profile-card .profile-card-share-img, .profile-card .profile-card-img {
-  align-self: center;
-  border-radius: 50%;
+  color: var(--dark-grey-blue);
 }
 
 .profile-card {
@@ -98,30 +94,70 @@ main {
 }
 .profile-card .profile-card-img {
   grid-area: profile;
+  align-self: center;
   justify-self: end;
+  border-radius: 50%;
   width: 40px;
 }
 .profile-card .profile-card-name {
   align-self: end;
   grid-area: profilename;
   font-weight: 700;
+  color: var(--dark-grey-blue);
 }
 .profile-card .profile-card-date {
   align-self: start;
   grid-area: profiledate;
+  color: var(----dark-blue);
 }
 .profile-card .profile-card-share-img {
-  grid-area: sharebutton;
   height: 32px;
   width: 32px;
+  border-radius: 50%;
   padding: 0.6rem;
+  background-color: var(--dark-grey-blue);
   overflow: hidden;
-  background-color: var(--light-grey-blue);
+  grid-area: sharebutton;
+  align-self: center;
 }
 
 .share-card {
   position: absolute;
-  display: none;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 102px auto 64px;
+  grid-template-rows: 76px;
+  column-gap: 15px;
+  align-items: center;
+  width: 100%;
+  background: var(--dark-grey-blue);
+  color: var(--grey-blue);
+}
+
+.share-card-title {
+  justify-self: end;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.share-card-list {
+  display: flex;
+  column-gap: 1.3rem;
+}
+.share-card-list li {
+  width: 20px;
+}
+
+.share-card-share-img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  padding: 0.6rem;
+  background-color: var(--grey-blue);
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
