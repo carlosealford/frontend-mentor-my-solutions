@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/carloseam/order-summary-component)
-- Live URL: [Summary Component Site](https://carloseam.github.io/order-summary-component/)
+- Solution URL: [Github Repo](https://github.com/web-shuriken/order-summary-component)
+- Live URL: [Summary Component Site](https://web-shuriken.github.io/order-summary-component/)
 
 ## My process
 
@@ -68,5 +68,5 @@ Naming of CSS classes is currently not my strength. Something there is a struggl
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
-- Frontend Mentor - [CarlosEAM](https://www.frontendmentor.io/profile/CarlosEAM)
+- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
 - Twitter - [@webshuriken](https://www.twitter.com/webshuriken)

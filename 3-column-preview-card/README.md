@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/CarlosEAM/3-column-preview-card)
-- Live URL: [3 Columns Preview Site](https://carloseam.github.io/3-column-preview-card/)
+- Solution URL: [Github Repo](https://github.com/web-shuriken/3-column-preview-card)
+- Live URL: [3 Columns Preview Site](https://web-shuriken.github.io/3-column-preview-card/)
 
 ## Setup
 
@@ -73,5 +73,5 @@ HTML and CSS are getting stronger but I still feel that my SASS needs some more 
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
-- Frontend Mentor - [CarlosEAM](https://www.frontendmentor.io/profile/CarlosEAM)
+- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
 - Twitter - [@webshuriken](https://www.twitter.com/webshuriken)

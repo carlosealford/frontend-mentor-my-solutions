@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/CarlosEAM/frontend-mentor-my-solutions/tree/main/time-tracking-dashboard)
-- Live URL: [Time Tracking Dashboard](https://carloseam.github.io/frontend-mentor-my-solutions/time-tracking-dashboard/dist/)
+- Solution URL: [Github Repo](https://github.com/web-shuriken/frontend-mentor-my-solutions/tree/main/time-tracking-dashboard)
+- Live URL: [Time Tracking Dashboard](https://web-shuriken.github.io/frontend-mentor-my-solutions/time-tracking-dashboard/dist/)
 
 ## My process
 
@@ -97,7 +97,7 @@ It has a lot of good examples.
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
-- Frontend Mentor - [CarlosEAM](https://www.frontendmentor.io/profile/CarlosEAM)
+- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
 - Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
 
 ## Acknowledgments

@@ -31,8 +31,8 @@ Users should be able to:
 
 Here are the links to my solution on GitHub and the live page where you can check out the profile card on your browser.
 
-- Solution URL: [Github Repo](https://github.com/CarlosEAM/frontend-mentor-my-solutions/tree/main/four-card-feature)
-- Live URL: [Four Card Feature](https://carloseam.github.io/frontend-mentor-my-solutions/four-card-feature/)
+- Solution URL: [Github Repo](https://github.com/web-shuriken/frontend-mentor-my-solutions/tree/main/four-card-feature)
+- Live URL: [Four Card Feature](https://web-shuriken.github.io/frontend-mentor-my-solutions/four-card-feature/)
 
 ## My process :computer:
 
@@ -69,7 +69,7 @@ Even though it is stronger than when the challenge begun I could always do with 
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
-- Frontend Mentor - [CarlosEAM](https://www.frontendmentor.io/profile/CarlosEAM)
+- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
 - Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
 
 ## Acknowledgments

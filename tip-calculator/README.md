@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/CarlosEAM/tip-calculator)
-- Live URL: [Tip Calculator Site](https://carloseam.github.io/tip-calculator/)
+- Solution URL: [Github Repo](https://github.com/web-shuriken/tip-calculator)
+- Live URL: [Tip Calculator Site](https://web-shuriken.github.io/tip-calculator/)
 
 ## My process
 
@@ -79,7 +79,7 @@ This project showed me that there are a few bits which I need to work on some mo
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
-- Frontend Mentor - [CarlosEAM](https://www.frontendmentor.io/profile/CarlosEAM)
+- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
 - Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
 
 ## Acknowledgments

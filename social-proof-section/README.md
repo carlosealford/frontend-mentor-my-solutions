@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links :link:
 
-- Solution URL: [Github Repo](https://github.com/CarlosEAM/social-proof-section)
-- Live URL: [Social Proof Section Site](https://carloseam.github.io/social-proof-section/)
+- Solution URL: [Github Repo](https://github.com/web-shuriken/social-proof-section)
+- Live URL: [Social Proof Section Site](https://web-shuriken.github.io/social-proof-section/)
 
 ## My process
 
@@ -74,7 +74,7 @@ Although I feel comfortable with CSS, Semantic HTML5 and SASS there is always ro
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
-- Frontend Mentor - [CarlosEAM](https://www.frontendmentor.io/profile/CarlosEAM)
+- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
 - Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
 
 ## Acknowledgments :clap:

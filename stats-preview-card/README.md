@@ -42,8 +42,8 @@ Here are two screenshot of the final card.
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/carloseam/stats-preview-card-component)
-- Live URL: [Stats Preview Card Site](https://carloseam.github.io/stats-preview-card-component/)
+- Solution URL: [Github Repo](https://github.com/web-shuriken/stats-preview-card-component)
+- Live URL: [Stats Preview Card Site](https://web-shuriken.github.io/stats-preview-card-component/)
 
 ## My process
 
@@ -105,7 +105,7 @@ Here are some of the items I must further develop:
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
-- Frontend Mentor - [CarlosEAM](https://www.frontendmentor.io/profile/CarlosEAM)
+- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
 - Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
 
 ## Acknowledgments
