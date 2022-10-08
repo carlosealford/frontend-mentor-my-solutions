@@ -52,7 +52,6 @@ main {
   height: 512px;
   width: 328px;
   background: #fff;
-  overflow: hidden;
 }
 
 .card-header {
@@ -60,6 +59,7 @@ main {
   background-image: url("../images/drawers.jpg");
   background-size: cover;
   background-position: 2px -16px;
+  overflow: hidden;
 }
 
 .card-body {
@@ -152,6 +152,21 @@ main {
 .share-card-list li {
   display: flex;
   width: 20px;
+  transition: transform 0.22s;
+}
+.share-card-list li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.share-button {
+  transition: transform 0.22s;
+}
+.share-button:hover {
+  cursor: pointer;
+}
+.share-button:active {
+  transform: scale(0.8);
 }
 
 .share-card-share-img {
@@ -212,6 +227,42 @@ main {
     grid-template-rows: 28px 28px;
     grid-area: card-profile;
     height: 58px;
+  }
+
+  .share-card {
+    right: -56px;
+    bottom: 91px;
+    left: revert;
+    grid-template-columns: auto auto;
+    grid-template-rows: 57px;
+    column-gap: 1rem;
+    height: 57px;
+    width: 250px;
+    border-radius: 14px;
+  }
+  .share-card:before {
+    content: "";
+    position: absolute;
+    top: 47px;
+    height: 20px;
+    width: 20px;
+    margin: 0 50%;
+    background: var(--dark-grey-blue);
+    transform: rotate(45deg);
+  }
+  .share-card .show {
+    display: flex;
+    justify-content: center;
+  }
+
+  .share-card-title {
+    font-size: 1rem;
+  }
+
+  .share-card-share-img {
+    position: absolute;
+    top: 82px;
+    margin: 0px 48%;
   }
 }
 @media (min-width: 1440px) {
