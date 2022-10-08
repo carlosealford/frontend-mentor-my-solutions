@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sass/style.css">
   
   <title>Frontend Mentor | Article preview component</title>
 
@@ -12,25 +16,71 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .temp-img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: auto;
+      width: 100%;
+      opacity: .6
+    }
   </style>
 </head>
 <body>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+  <main>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+    <section class="cards-holder">
+      <article class="card">
+        <header class="card-header"></header>
+        <div class="card-body">
+          <p class="distinct-text">
+            Shift the overall look and feel by adding these wonderful 
+            touches to furniture in your home
+          </p>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps 
+            it felt slightly bare and uninviting. I’ve got some simple tips 
+            to help you make any room feel complete.
+          </p>
+        </div>
+        <div class="profile-card">
+          <img src="images/avatar-michelle.jpg" alt="mitchell posing outdoor in a misty day" class="profile-card-img">
+          <span class="profile-card-name">  
+            Michelle Appleton
+          </span>
+          <span class="profile-card-date">
+            28 Jun 2020
+          </span>
+          <figure class="profile-card-share-img share-button" onclick="showShareBox()">
+            <img src="images/icon-share.svg" alt="share icon arrow">
+          </figure>
+        </div>
+        <div class="share-card">
+          <p class="share-card-title">
+            Share
+          </p>
+          <ul class="share-card-list">
+            <li><img src="images/icon-facebook.svg" alt="facebook icon"></li>
+            <li><img src="images/icon-twitter.svg" alt="twitter icon"></li>
+            <li><img src="images/icon-pinterest.svg" alt="pinterest icon"></li>
+          </ul>
+          <figure class="share-card-share-img share-button" onclick="showShareBox()">
+            <img src="images/icon-share.svg" alt="share icon arrow">
+          </figure>
+        </div>
+      </article>
+    </section>
 
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <footer class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://carlosealford.com/" target="_blank">Carlos E Alford M</a>.</p>
+    </footer>
+  </main>
+  <script>
+    function showShareBox(e) {
+      document.querySelector('.share-card').classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
