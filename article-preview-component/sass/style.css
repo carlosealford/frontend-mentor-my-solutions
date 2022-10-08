@@ -45,12 +45,16 @@ main {
 }
 
 .cards-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5rem 1rem 2rem;
 }
 
 .card {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-between;
   border-radius: 0.7rem;
   height: 512px;
   width: 328px;
@@ -67,7 +71,7 @@ main {
 
 .card-body {
   position: relative;
-  padding: 2.7rem 2.8rem 1rem;
+  padding: 2.7rem 1rem 1rem;
 }
 .card-body p:nth-child(2) {
   padding-top: 1rem;
@@ -85,7 +89,7 @@ main {
 
 .profile-card {
   display: grid;
-  grid-template-columns: 76px auto 62px;
+  grid-template-columns: 52px auto 44px;
   grid-template-rows: 38px 38px;
   grid-template-areas: "profile profilename sharebutton" "profile profiledate sharebutton";
   column-gap: 1.2rem;
@@ -126,7 +130,7 @@ main {
   bottom: 0;
   left: 0;
   display: grid;
-  grid-template-columns: 102px auto 62px;
+  grid-template-columns: 77px auto 44px;
   grid-template-rows: 76px;
   column-gap: 15px;
   align-items: center;
@@ -164,6 +168,20 @@ main {
   padding: 0.6rem;
   background-color: var(--grey-blue);
   overflow: hidden;
+}
+
+@media screen and (min-width: 375px) {
+  .card-body {
+    padding: 2.7rem 2.8rem 1rem;
+  }
+
+  .profile-card {
+    grid-template-columns: 76px auto 62px;
+  }
+
+  .share-card {
+    grid-template-columns: 102px auto 62px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
