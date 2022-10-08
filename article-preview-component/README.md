@@ -1,22 +1,6 @@
-# Frontend Mentor - Article preview component
-
-![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
-
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
-**To do this challenge, you need a basic understanding of HTML, CSS and a tiny bit of JavaScript.**
-
-## The challenge
-
-
-
 # Frontend Mentor - Four card feature section solution
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Article Preview Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -62,32 +46,21 @@ Here are the links to my solution on GitHub and the live page where you can chec
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- CSS Grid
-- Mobile-first workflow
 - SASS
+- CSS grid and flexbox
+- Mobile-first workflow
 - Git and Github
+- JavaScript
 
 ### What I learned
 
-Using Grid to offset the location of boxes, creating a
-brick bond style.
-
-```sass
-.fcf__body
-  grid-template-columns: repeat(4, 1fr)
-  grid-template-rows: repeat(3, 1fr)
-  column-gap: 1.4rem
-
-.fcf__card-supervisor
-  grid-column: 1 / 3
-  grid-row: 2 / 3
-  justify-self: end
-```
+I learned to use @mixins which are fun and time savers. Used it for the share button component which is used by two 
+elements and uses the same styles except for the background colour which I passed in as an argument. SO handy.
 
 ### Continued development
 
-Even though it is stronger than when the challenge begun I could always do with more practice using Grids.
+Feeling stronger about my SASS but a little bit more practice is required. Mixins and Partials are there but need 
+to understand better in which situations they are best suited.
 
 ## Author
 
