@@ -8,6 +8,7 @@ main
   justify-content: center
   padding: 5rem 1rem 2rem
 
+// COMPONENT CARD
 .card
   display: flex
   flex-flow: column nowrap
@@ -17,13 +18,17 @@ main
   width: 328px
   background: #fff
 
+// component header
 .card-header
   height: 15.5rem
+  border-top-right-radius: .7rem
+  border-top-left-radius: .7rem
   background-image: url('../images/drawers.jpg')
   background-size: cover
   background-position: 2px -16px
   overflow: hidden
 
+// component body
 .card-body
   position: relative
   padding: 2.7rem 1rem 1rem
@@ -48,6 +53,7 @@ main
   background-color: var($bgcolor)
   overflow: hidden
 
+// holds the part with the author and share buttons
 .profile-card
   display: grid
   grid-template-columns: 52px auto 44px
@@ -76,19 +82,21 @@ main
     grid-area: sharebutton
     align-self: center
 
+// appears once the share button has been clicked, contains social links
 .share-card
   position: absolute
   bottom: 0
   left: 0
-  display: grid
+  display: none
   grid-template-columns: 77px auto 44px
   grid-template-rows: 76px
   column-gap: 15px
   align-items: center
   width: 100%
+  border-bottom-right-radius: .7rem
+  border-bottom-left-radius: .7rem
   background: var(--dark-grey-blue)
   color: var(--grey-blue)
-  display: none
 
 .share-card.show
   display: grid

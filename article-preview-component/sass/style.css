@@ -56,6 +56,8 @@ main {
 
 .card-header {
   height: 15.5rem;
+  border-top-right-radius: 0.7rem;
+  border-top-left-radius: 0.7rem;
   background-image: url("../images/drawers.jpg");
   background-size: cover;
   background-position: 2px -16px;
@@ -122,15 +124,16 @@ main {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: grid;
+  display: none;
   grid-template-columns: 77px auto 44px;
   grid-template-rows: 76px;
   column-gap: 15px;
   align-items: center;
   width: 100%;
+  border-bottom-right-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
   background: var(--dark-grey-blue);
   color: var(--grey-blue);
-  display: none;
 }
 
 .share-card.show {
@@ -209,6 +212,9 @@ main {
   .card-header {
     grid-area: card-header;
     height: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
     background-position: 0 0;
   }
 
