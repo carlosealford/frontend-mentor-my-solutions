@@ -40,6 +40,7 @@ final piece. **Click on an image to view live site.**
 [<img src="./3-column-preview-card/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/3-column-preview-card/)
 [<img src="./social-proof-section/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/social-proof-section/)
 [<img src="./four-card-feature/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/four-card-feature/)
+[<img src="./article-preview-component/screenshot.png" width="232" alt="something to show">](https://carloseam.github.io/frontend-mentor-my-solutions/article-preview-component/)
 
 ### Junior
 
