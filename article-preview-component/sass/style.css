@@ -126,7 +126,7 @@ main {
   bottom: 0;
   left: 0;
   display: grid;
-  grid-template-columns: 102px auto 64px;
+  grid-template-columns: 102px auto 62px;
   grid-template-rows: 76px;
   column-gap: 15px;
   align-items: center;
@@ -153,6 +153,7 @@ main {
   column-gap: 1.3rem;
 }
 .share-card-list li {
+  display: flex;
   width: 20px;
 }
 
