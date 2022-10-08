@@ -1,0 +1,122 @@
+main
+  padding: .6rem
+  background: var(--light-grey-blue)
+
+.cards-holder
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 5rem 1rem 2rem
+
+.card
+  display: flex
+  flex-flow: column nowrap
+  justify-content: space-between
+  border-radius: .7rem
+  height: 512px
+  width: 328px
+  background: #fff
+  overflow: hidden
+
+.card-header
+  height: 15.5rem
+  background-image: url('../images/drawers.jpg')
+  background-size: cover
+  background-position: 2px -16px
+
+.card-body
+  position: relative
+  padding: 2.7rem 1rem 1rem
+  p:nth-child(2)
+    padding-top: 1rem
+    line-height: 20px
+    color: var(--dark-blue)
+
+.distinct-text
+  font-size: 1.2rem
+  font-weight: 700
+  line-height: 24px
+  word-spacing: 2px
+  color: var(--dark-grey-blue)
+
+// used by the share button on both normal and active state
+@mixin share-button($bgcolor: 'lime')
+  height: 32px
+  width: 32px
+  border-radius: 50%
+  padding: .6rem
+  background-color: var($bgcolor)
+  overflow: hidden
+
+.profile-card
+  display: grid
+  grid-template-columns: 52px auto 44px
+  grid-template-rows: 38px 38px
+  grid-template-areas: "profile profilename sharebutton" "profile profiledate sharebutton"
+  column-gap: 1.2rem
+  row-gap: .1rem
+  height: 76px
+  .profile-card-img
+    grid-area: profile
+    align-self: center
+    justify-self: end
+    border-radius: 50%
+    width: 40px
+  .profile-card-name
+    align-self: end
+    grid-area: profilename
+    font-weight: 700
+    color: var(--dark-grey-blue)
+  .profile-card-date
+    align-self: start
+    grid-area: profiledate
+    color: var(----dark-blue)
+  .profile-card-share-img
+    @include share-button($bgcolor: --light-grey-blue)
+    grid-area: sharebutton
+    align-self: center
+
+.share-card
+  position: absolute
+  bottom: 0
+  left: 0
+  display: grid
+  grid-template-columns: 77px auto 44px
+  grid-template-rows: 76px
+  column-gap: 15px
+  align-items: center
+  width: 100%
+  background: var(--dark-grey-blue)
+  color: var(--grey-blue)
+  display: none
+
+.share-card.show
+  display: grid
+
+.share-card-title
+  justify-self: end
+  font-size: .9rem
+  font-weight: 700
+  letter-spacing: 6px
+  text-transform: uppercase
+
+.share-card-list
+  display: flex
+  column-gap: 1.3rem
+  li
+    display: flex
+    width: 20px
+
+.share-card-share-img
+  @include share-button($bgcolor: --grey-blue)
+
+// Media queries
+@media screen and (min-width: 375px)
+  .card-body
+    padding: 2.7rem 2.8rem 1rem
+
+  .profile-card
+    grid-template-columns: 76px auto 62px
+
+  .share-card
+    grid-template-columns: 102px auto 62px
