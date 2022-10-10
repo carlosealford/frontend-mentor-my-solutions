@@ -152,12 +152,12 @@ main {
   display: flex;
   column-gap: 1.3rem;
 }
-.share-card-list li {
+.share-card-list li a {
   display: flex;
   width: 20px;
   transition: transform 0.22s;
 }
-.share-card-list li:hover {
+.share-card-list li a:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
