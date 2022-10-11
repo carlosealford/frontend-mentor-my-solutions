@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Carlos E Alford @WebShuriken">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+  <main>
+    <section class="cards-wrapper">
+      <article class="card">
+        <!-- logo in the card -->
+        <header class="card-header">
+          <img src="images/logo.svg" class="card-logo" alt="company logo">
+        </header>
+        <!-- hero images, one for mobile and another for large screens -->
+        <picture class="card-hero">
+          <source media="(min-width: 992px)" srcset="images/hero-desktop.jpg">
+          <img src="images/hero-mobile.jpg" alt="Lady posing by a red wall with a plant between them">
+        </picture>
+        <!-- card body with large text -->
+        <div class="card-body">
+          <h1>We're <span class="bold-title">coming<br> soon</span></h1>
+          <p>Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+          <div class="sign-up">
+            <label for="singup-email">Enter your email address</label>
+            <input type="email" name="signup-email" id="signup-email" placeholder="Email Address">
+            <button class="signup-button">Sign up</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://carlosealford.com/" target="_blank">Carlos E Alford M</a>.</p>
+  </footer>
+</body>
+</html>
