@@ -75,6 +75,7 @@ img {
 
 .card-body {
   padding: 3.9rem 2rem;
+  color: var(--desaturated-red);
 }
 
 .card-hero {
@@ -93,6 +94,7 @@ img {
 .bold-title {
   display: block;
   font-weight: 700;
+  color: var(--dark-gray-red);
 }
 
 .card-body p {
@@ -116,12 +118,14 @@ img {
 }
 
 #signup-email {
-  padding: 1rem 1.4rem;
-  border: 1px solid red;
+  padding: 1.04rem 1.4rem;
+  border: 1px solid var(--desaturated-red);
   width: 100%;
   border-radius: 32px;
   letter-spacing: 1px;
   font-size: 0.8rem;
+  background: none;
+  color: var(--desaturated-red);
 }
 
 .signup-button {
@@ -133,7 +137,10 @@ img {
   right: 0;
   height: 50px;
   width: 64px;
+  border: none;
   border-radius: 32px;
+  background: linear-gradient(var(--linear-color-b));
+  box-shadow: 0 10px 18px -5px var(--desaturated-red);
 }
 .signup-button img {
   height: 46%;
