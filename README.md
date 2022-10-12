@@ -41,6 +41,7 @@ final piece. **Click on an image to view live site.**
 [<img src="./social-proof-section/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/social-proof-section/)
 [<img src="./four-card-feature/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/four-card-feature/)
 [<img src="./article-preview-component/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/article-preview-component/)
+[<img src="./base-apparel-coming-soon-master/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/base-apparel-coming-soon-master/)
 
 ### Junior
 
