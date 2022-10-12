@@ -10,7 +10,6 @@
 :root {
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
-  --soft-red: hsl(0, 100%, 98%);
   --desaturated-red: hsl(0, 36%, 70%);
   --soft-red: hsl(0, 93%, 68%);
   --dark-gray-red: hsl(0, 6%, 24%);
@@ -137,6 +136,9 @@ main {
   background: none;
   color: var(--desaturated-red);
 }
+#signup-email:focus {
+  color: var(--dark-gray-red);
+}
 
 .signup-button {
   display: flex;
@@ -158,6 +160,32 @@ main {
 .signup-button img {
   height: 46%;
   width: auto;
+}
+
+.sign-up .email-img-warning {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 76px;
+  height: 20px;
+  width: 20px;
+}
+
+.sign-up .email-text-warning {
+  display: none;
+  padding: 0.6rem 0 0;
+  margin-left: 1.4rem;
+  text-align: left;
+}
+
+.sign-up.incorrect-email__warning #signup-email {
+  border: 1px solid var(--soft-red);
+}
+.sign-up.incorrect-email__warning .email-img-warning {
+  display: block;
+}
+.sign-up.incorrect-email__warning .email-text-warning {
+  display: block;
 }
 
 @media screen and (min-width: 800px) {
@@ -235,6 +263,16 @@ main {
     height: 56px;
     width: 100px;
   }
+
+  .sign-up .email-img-warning {
+    right: 114px;
+    height: 28px;
+    width: 28px;
+  }
+
+  .sign-up .email-text-warning {
+    margin-left: 0.4rem;
+  }
 }
 @media screen and (min-width: 1400px) {
   .card-body {
@@ -250,6 +288,10 @@ main {
 
   .sign-up {
     margin-left: 8.4rem;
+  }
+
+  .sign-up .email-text-warning {
+    margin-left: 2rem;
   }
 }
 

@@ -31,10 +31,14 @@
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
           <div class="sign-up">
             <label for="singup-email">Enter your email address</label>
+            <!-- the input uses regex to check for valid email pattern -->
             <input type="email" name="signup-email" id="signup-email" placeholder="Email Address">
-            <button class="signup-button" aria-labelledby="submit email to signup">
+            <button class="signup-button" aria-labelledby="submit email to signup" onclick="checkEmail()">
               <img src="images/icon-arrow.svg" alt="">
             </button>
+            <!-- warning messages -->
+            <img src="images/icon-error.svg" class="email-img-warning" alt="error icon">
+            <p class="email-text-warning" role="alert">Please provide a valid email</p>
           </div>
         </div>
       </article>
@@ -45,5 +49,27 @@
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://carlosealford.com/" target="_blank">Carlos E Alford M</a>.</p>
   </footer>
+
+  <script>
+    // uses regex to validate email before submittion
+    function checkEmail(e) {
+      // pattern = alias@domainname with an option for .co.uk or just .com
+      let pattern = /[A-Za-z0-9]{3,}@[A-Za-z0-9]{4,}\.[a-z]{2,3}\.?([a-z]{2})?/;
+      let email = document.querySelector('#signup-email').value;
+
+      // negating the result because thats all we care about right now.
+      if (!pattern.test(email)) {
+        addEmailWarningClass()
+        // simple way to make warning disappear after a set time
+        setTimeout(() => {
+          addEmailWarningClass()
+        }, 2000);
+      }
+
+      function addEmailWarningClass() {
+        document.querySelector('.sign-up').classList.toggle('incorrect-email__warning');
+      }
+    }
+  </script>
 </body>
 </html>

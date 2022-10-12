@@ -71,6 +71,8 @@ main
   font-size: .8rem
   background: none
   color: var(--desaturated-red)
+  &:focus
+    color: var(--dark-gray-red)
 
 .signup-button
   display: flex
@@ -90,6 +92,28 @@ main
   img
     height: 46%
     width: auto
+
+.sign-up .email-img-warning
+  display: none
+  position: absolute
+  top: 15px
+  right: 76px
+  height: 20px
+  width: 20px
+
+.sign-up .email-text-warning
+  display: none
+  padding: .6rem 0 0
+  margin-left: 1.4rem
+  text-align: left
+
+.sign-up.incorrect-email__warning
+  #signup-email
+    border: 1px solid var(--soft-red)
+  .email-img-warning
+    display: block
+  .email-text-warning
+    display: block
 
 // MEDIA QUERIES
 @media screen and (min-width: 800px)
@@ -155,6 +179,14 @@ main
     height: 56px
     width: 100px
 
+  .sign-up .email-img-warning
+    right: 114px
+    height: 28px
+    width: 28px
+
+  .sign-up .email-text-warning
+    margin-left: .4rem
+
 @media screen and (min-width: 1400px)
   .card-body
     width: 100%
@@ -166,3 +198,6 @@ main
 
   .sign-up
     margin-left: 8.4rem
+
+  .sign-up .email-text-warning
+    margin-left: 2rem
