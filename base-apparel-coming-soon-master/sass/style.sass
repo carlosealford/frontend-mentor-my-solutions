@@ -1,0 +1,203 @@
+@use 'base'
+
+.test-image
+  position: absolute
+  top: 0
+  left: 0
+  opacity: .6
+
+main
+  background-image: linear-gradient(var(--linear-color-a))
+
+.card
+  min-height: 800px
+
+.card-header
+  grid-area: cardheader
+  padding: 2rem 2rem 1.7rem
+
+.card-logo
+  width: 100px
+
+// HERO
+.card-hero
+  grid-area: cardhero
+  display: block
+  overflow: hidden
+
+// CARD BODY
+.card-body
+  grid-area: cardbody
+  padding: 3.9rem 2rem
+  color: var(--desaturated-red)
+
+.large-text
+  font-size: 2.5rem
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center
+  letter-spacing: 11px
+  line-height: 41px
+
+.bold-title
+  display: block
+  font-weight: 700
+  color: var(--dark-gray-red)
+
+.card-body p
+  padding-top: 1.1rem
+  word-spacing: -1px
+  font-size: .9rem
+  line-height: 21px
+  text-align: center
+  letter-spacing: 0px
+
+// SIGN UP SECTION
+.sign-up
+  margin-top: 2.1rem
+  label
+    position: absolute
+    left: -1000px
+    height: 1px
+    width: 1px
+    opacity: 0
+
+#signup-email
+  padding: 1.04rem 1.4rem
+  border: 1px solid var(--desaturated-red)
+  width: 100%
+  border-radius: 32px
+  letter-spacing: 1px
+  font-size: .8rem
+  background: none
+  color: var(--desaturated-red)
+  &:focus
+    color: var(--dark-gray-red)
+
+.signup-button
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  top: 0
+  right: 0
+  height: 50px
+  width: 64px
+  border: none
+  border-radius: 32px
+  background: linear-gradient(var(--linear-color-b))
+  box-shadow: 0 10px 18px -5px var(--desaturated-red)
+  &:hover
+    background: linear-gradient(var(--linear-color-c))
+  img
+    height: 46%
+    width: auto
+
+.sign-up .email-img-warning
+  display: none
+  position: absolute
+  top: 15px
+  right: 76px
+  height: 20px
+  width: 20px
+
+.sign-up .email-text-warning
+  display: none
+  padding: .6rem 0 0
+  margin-left: 1.4rem
+  text-align: left
+
+.sign-up.incorrect-email__warning
+  #signup-email
+    border: 1px solid var(--soft-red)
+  .email-img-warning
+    display: block
+  .email-text-warning
+    display: block
+
+// MEDIA QUERIES
+@media screen and (min-width: 800px)
+  .card-hero
+    height: 305px
+
+  .card-body
+    width: 590px
+
+@media screen and (min-width: 1200px)
+  .card
+    display: grid
+    grid-template-columns: auto auto
+    grid-template-rows: 160px auto
+    grid-template-areas: "cardheader cardhero" "cardbody cardhero"
+    max-height: 800px
+    height: 100vh
+    max-width: 1440px
+    width: 100vw
+    background-image: url('../images/bg-pattern-desktop.svg')
+
+  .card-hero
+    height: 100%
+    width: auto
+    img
+      height: 100%
+      width: auto
+
+  .card-header
+    max-width: 830px
+    padding: 3.9rem 10.2rem 0
+
+  .card-logo
+    width: 160px
+
+  .card-body
+    max-width: 830px
+    padding: 4.6rem 2rem
+    p
+      padding: 1.5rem 1.1rem 0 1.4rem
+      font-size: 1rem
+      line-height: 26px
+      word-spacing: 0
+      text-align: left
+
+  .large-text
+    padding: 0 1.2rem
+    font-size: 4.1rem
+    text-align: left
+    letter-spacing: 17px
+    line-height: 68px
+
+  .sign-up
+    width: 444px
+    margin-top: 2.7rem
+    margin-left: 1.4rem
+    padding: 0
+
+  #signup-email
+    padding: 1.2rem 7rem 1.2rem 2rem
+
+  .signup-button
+    height: 56px
+    width: 100px
+
+  .sign-up .email-img-warning
+    right: 114px
+    height: 28px
+    width: 28px
+
+  .sign-up .email-text-warning
+    margin-left: .4rem
+
+@media screen and (min-width: 1400px)
+  .card-body
+    width: 100%
+    p
+      padding: 1.5rem 12.1rem 0 8.4rem
+
+  .large-text
+    padding: 0 8.2rem
+
+  .sign-up
+    margin-left: 8.4rem
+
+  .sign-up .email-text-warning
+    margin-left: 2rem
