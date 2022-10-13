@@ -14,6 +14,7 @@
 <body>
   <main>
     <section class="cards-wrapper">
+      <header class="cards-wrapper-header"><h1>Coming soon poster</h1></header>
       <article class="card">
         <!-- logo in the card -->
         <header class="card-header">
@@ -26,13 +27,13 @@
         </picture>
         <!-- card body with large text -->
         <div class="card-body">
-          <h1 class="large-text">We're <span class="bold-title">coming<br> soon</span></h1>
+          <h2 class="large-text">We're <span class="bold-title">coming<br> soon</span></h2>
           <p>Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
           <div class="sign-up">
-            <label for="singup-email">Enter your email address</label>
+            <label for="signup-email">Enter your email address</label>
             <!-- the input uses regex to check for valid email pattern -->
-            <input type="email" name="signup-email" id="signup-email" placeholder="Email Address">
+            <input type="email" name="email" id="signup-email" placeholder="Email Address">
             <button class="signup-button" aria-label="submit email to signup" onclick="checkEmail()">
               <img src="images/icon-arrow.svg" alt="">
             </button>
