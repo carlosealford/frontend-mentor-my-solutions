@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Carlos E Alford @WebShuriken">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <main>
+    <h1 class="site-title">Calculator App</h1>
+    <section class="calculator">
+      <!-- CALC top half -->
+      <header>
+        <h2 class="calc-title">calc</h2>
+        <div class="theme-selector-panel">
+          <!-- theme selector -->
+          <div>
+            <label for="themeSelectorRange">THEME</label>
+            <p>1 2 3</p>
+            <input type="range" name="theme selector" id="themeSelectorRange" min="0" max="100" value="0" step="50">
+          </div>
+        </div>
+      </header>
+      <div class="calc-body">
+        <div class="calc-screen"></div>
+        <div class="calc-keypad">
+          <!-- first row -->
+          <button class="calc-keypad-keys" data-btn="1">1</button>
+          <button class="calc-keypad-keys" data-btn="2">2</button>
+          <button class="calc-keypad-keys" data-btn="3">3</button>
+          <button class="calc-keypad-keys" data-btn="del">DEL</button>
+          <!-- second row -->
+          <button class="calc-keypad-keys" data-btn="4">4</button>
+          <button class="calc-keypad-keys" data-btn="5">5</button>
+          <button class="calc-keypad-keys" data-btn="6">6</button>
+          <button class="calc-keypad-keys" data-btn="add">+</button>
+          <!-- third row -->
+          <button class="calc-keypad-keys" data-btn="7">7</button>
+          <button class="calc-keypad-keys" data-btn="8">8</button>
+          <button class="calc-keypad-keys" data-btn="9">9</button>
+          <button class="calc-keypad-keys" data-btn="minus">-</button>
+          <!-- fourth row -->
+          <button class="calc-keypad-keys" data-btn="dot">.</button>
+          <button class="calc-keypad-keys" data-btn="0">0</button>
+          <button class="calc-keypad-keys" data-btn="divide">/</button>
+          <button class="calc-keypad-keys" data-btn="times">x</button>
+          <!-- fifth row -->
+          <button class="calc-keypad-keys" data-btn="reset">RESET</button>
+          <button class="calc-keypad-keys" data-btn="equals">=</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://carlosealford.com/">Carlos E Alford M</a>.
+  </footer>
+</body>
+</html>
