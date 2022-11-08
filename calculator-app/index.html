@@ -5,26 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Carlos E Alford @WebShuriken">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sass/style.css">
   <title>Frontend Mentor | Calculator app</title>
 </head>
 <body>
-  <main>
+  <main class="site-main theme-one">
     <h1 class="site-title">Calculator App</h1>
-    <section class="calculator">
+    <section class="calculator theme-one">
       <!-- CALC top half -->
       <header>
         <h2 class="calc-title">calc</h2>
         <div class="theme-selector-panel">
           <!-- theme selector -->
-          <div>
-            <label for="themeSelectorRange">THEME</label>
-            <p>1 2 3</p>
-            <input type="range" name="theme selector" id="themeSelectorRange" min="0" max="100" value="0" step="50">
-          </div>
+          <label for="themeSelectorRange">THEME</label>
+          <p>1 2 3</p>
+          <input type="range" name="theme selector" id="themeSelectorRange" min="0" max="100" value="0" step="50">
         </div>
       </header>
       <div class="calc-body">
@@ -57,6 +55,7 @@
       </div>
     </section>
   </main>
+  <img src="./design/mobile-design-theme-1.jpg" alt="" class="design-img">
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://carlosealford.com/">Carlos E Alford M</a>.

@@ -1,0 +1,94 @@
+.calculator
+  header
+    display: flex
+    justify-content: space-between
+
+.calc-title
+  padding: .5rem .25rem 0
+  color: var(--text-white)
+  font-size: 1rem
+
+.theme-selector-panel
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: 1fr 1fr
+  grid-template-areas: ". themep" "themelabel themerange"
+  height: 50px
+  width: 143px
+  font-size: .37rem
+  color: var(--text-white)
+  label
+    align-self: center
+    grid-area: themelabel
+    margin-top: 4px
+    margin-left: 2px
+    letter-spacing: 1px
+  p
+    align-self: center
+    justify-self: center
+    grid-area: themep
+    margin-top: 2px
+    margin-left: 4px
+    letter-spacing: 6px
+
+
+/* Base CSS for custom range slider */
+/* first time doing it so not sure about crossbroswer compatability */
+/* There seems to be a lot of setup for wide suport */
+/* url: https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
+@mixin range-thumb()
+  border-radius: 50%
+  height: 16px
+  width: 16px
+  background: var(--key-toggle-background)
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+  cursor: pointer
+
+@mixin range-track-p1()
+  width: 100%
+  height: .84rem
+  cursor: pointer
+
+@mixin range-track-p2($bg: val(--toggle-background))
+  border-radius: 1rem
+  padding: 5px
+  background: $bg
+
+.theme-selector-panel input[type=range]
+  grid-area: themerange
+  appearance: none
+  width: 100%
+  background: transparent
+
+  /* Style the thumb */
+  &::-webkit-slider-thumb
+    -webkit-appearance: none
+    @include range-thumb()
+
+  &::-moz-range-thumb
+    @include range-thumb()
+
+  &::-ms-thumb
+    @include range-thumb()
+
+  /* Style the track */
+  &::-webkit-slider-runnable-track
+    @include range-track-p1()
+    @include range-track-p2()
+
+  &::-moz-range-track
+    @include range-track-p1()
+    @include range-track-p2()
+
+  &::-ms-track
+    @include range-track-p1()
+    background: transparent
+    border-color: transparent
+
+  &::-ms-fill-lower
+    @include range-track-p2()
+
+  &::-ms-fill-upper
+    @include range-track-p2()
+    
+
