@@ -11,14 +11,6 @@
   font-size: 32px
   font-family: "League Spartan", sans-serif
 
-/* TODO: delete this style  */
-.design-img
-  position: absolute
-  top: 0
-  left: 0
-  width: 375px
-  height: auto
-
 /* All three themes for the calculator */
 .theme-one
   --main-background: hsl(222, 26%, 31%)
@@ -72,8 +64,12 @@
 /* footer */
 .attribution
   font-size: 11px
-  padding-bottom: 16px
+  padding: 16px 0
   text-align: center
-
-.attribution a
-  color: hsl(228, 45%, 44%)
+  width: 100%
+  a
+    color: hsl(228, 45%, 44%)
+  @media (min-width: 1440px)
+    bottom: 16px
+    left: 0
+    position: absolute

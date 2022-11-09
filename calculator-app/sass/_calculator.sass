@@ -4,6 +4,7 @@
   display: flex
   flex-flow: column wrap
   row-gap: 32px
+  width: 375px
   padding: .7rem
   background: var(--main-background)
 
@@ -85,6 +86,36 @@
   background: var(--key-background-three)
   color: var(--text-main)
   z-index: 44
-    
 
+// Make the calculator bigger on large screens
+@media (min-width: 1200px) and (min-height: 800px)
+  .site-main
+    padding-top: 2.1rem
 
+  .calculator
+    width: 588px
+  
+  .calc-screen
+    height: 127px
+    p
+      padding: 1.2rem 1rem
+      font-size: 1.8rem
+  
+  .calc-keypad
+    grid-template-columns: repeat(4, 100px)
+    grid-template-rows: repeat(5, 66px)
+    gap: 22px 26px
+    padding: 32px
+  
+  .calc-keypad-keys
+    font-size: 1.2rem
+
+    &:nth-child(4)>button
+        font-size: .8rem
+  
+    &:nth-child(17)>button
+        font-size: .8rem
+  
+    // EQUALS button
+    &:nth-child(18)>button
+        font-size: 1rem
