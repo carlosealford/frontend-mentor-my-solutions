@@ -88,8 +88,12 @@ function actOnOperator(op) {
       break;
     default:
       // track the operator +, -, / or * and stop storing input in the left hand operand
+      if (storeInLeftOperand) {
+        storeInLeftOperand = false;
+      }else {
+        calculateTotal();
+      }
       operator = op;
-      storeInLeftOperand = false;
       updateDisplay(rightOperand);
   }
 }
