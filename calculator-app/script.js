@@ -149,17 +149,75 @@ calcKeypad.addEventListener('click', function buttonPressed(e) {
 
 // theme slider listener
 var themeSlider = document.querySelector('#themeSelectorRange');
-themeSlider.addEventListener('change', function updateCalcTheme(e) {
-  let calculator = document.querySelector('.site-main');
+themeSlider.addEventListener('change', function getSliderValue(e) {
   let theme = e.target.value == '0' 
     ? 'calc-theme-1' 
     : e.target.value == '50' 
       ? 'calc-theme-2' 
       : 'calc-theme-3';
+    
+  updateCalcTheme(theme)
+});
+
+/**
+ * @description updates the to latest theme by user selection or at load time
+ * @param {string} theme - the calculator theme name/number 
+ */
+function updateCalcTheme(theme, atLoadInit = false) {
+  let calculator = document.querySelector('.site-main');
 
   // remove active theme
   calculator.classList.toggle(activeTheme);
   activeTheme = theme;
   // add selected theme
   calculator.classList.toggle(theme);
-});
+
+  // only run at load time
+  if (atLoadInit) {
+    let themeID = theme.substring(theme.length - 1);
+    let value = themeID == 1 ? 0 : themeID == 2 ? 50 : 100;
+    themeSlider.value = value;
+  }else {
+    updateStorageSettings();
+  }
+}
+
+/**
+ * @description load localstorage settings or setup anew
+ */
+(function loadLocalStorage() {
+  // check localStorage is available
+  if (storageAvailable) {
+    var themeSettings = localStorage.getItem('calculator-app');
+    if (themeSettings) {
+      updateCalcTheme(themeSettings, true);
+    }else {
+      updateStorageSettings();
+    }
+  }
+})()
+
+/**
+ * @description updates localStorage with the latest theme value
+ */
+function updateStorageSettings() {
+  localStorage.setItem('calculator-app', activeTheme);
+}
+
+/**
+ * @description check for the availability of localStorage
+ * @returns boolean
+ */
+function storageAvailable() {
+  let storage = window.localStorage;
+  try {
+    let test = 'are_you_available';
+    storage.setItem(test, test);
+    storage.removeItem(test);
+    return true;
+  } catch(e) {
+    console.error('localstorage: ', e.message);
+  }
+}
+
+
