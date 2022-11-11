@@ -44,6 +44,15 @@ create function to prepare result output so that it fits in screen
   - extract the decimals up to the value of difference and store in temp variable ✅
   - 'total' to become whole number plus the amount of decimals according to difference, MAX 4 places ✅
 
+4. numbers should display their value in the screen
+  - query the html element to display number and store it in a variable ✅
+  - create a display function that takes in 1 parameter:
+    - parameter: is a string that tells which value to show: leftOperand, rightOperand or total
+    - new value is added or removed to operand variable
+    - equals button is pressed as it will calculate a new result
+    - del button is pressed because the operand value has changed
+    - the reset button is pressed as it clears all and we need to show this.
+
 USE CASES
 
 CASE 1
@@ -93,7 +102,18 @@ CASE 3 - DISPLAY LIMIT
 var leftOperand = '', rightOperand = '', total = 0, operator;
 // switch to track where operand  will be stored
 var storeInLeftOperand = true;
+
+// query display element
+var display = document.querySelector('.calc-screen-value');
 var displayLimit = 14;
+
+/**
+ * @description updates the html with calculator values
+ * @param {string} value - value to update the display with
+ */
+function updateDisplay(value) {
+  display.textContent = value;
+}
 
 /**
  * @description Formats the calculation result to make sure it fits display limit
@@ -121,8 +141,10 @@ function prepareResultForScreen() {
 function storeOperand(value) {
   if (storeInLeftOperand) {
     leftOperand += value;
+    updateDisplay(leftOperand);
   }else{
     rightOperand += value;
+    updateDisplay(rightOperand);
   }
 }
 
@@ -138,24 +160,29 @@ function actOnOperator(op) {
       operator = '';
       total = 0;
       storeInLeftOperand = true;
+      updateDisplay(total);
       break;
     case 'del':
       if (storeInLeftOperand) {
         leftOperand = leftOperand.substring(0, leftOperand.length - 1);
+        updateDisplay(leftOperand);
       }else{
         rightOperand = rightOperand.substring(0, rightOperand.length - 1);
+        updateDisplay(rightOperand);
       }
       break;
     case '=':
       if (rightOperand != '') {
         calculateTotal();
         prepareResultForScreen();
+        updateDisplay(total);
       }
       break;
     default:
       // track the operator +, -, / or * and stop storing input in the left hand operand
       operator = op;
       storeInLeftOperand = false;
+      updateDisplay(rightOperand);
   }
 }
 
@@ -200,7 +227,7 @@ function calcButtonPressed(e) {
       actOnOperator(e.target.dataset.btn)
       break;
     default:
-      console.log("NOTHING HAPPENED")
+      console.error("Fallen through the calcButtonPressed function. Logic error.");
   }
 }
 
