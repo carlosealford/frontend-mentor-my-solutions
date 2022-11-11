@@ -12,7 +12,7 @@
   font-family: "League Spartan", sans-serif
 
 /* All three themes for the calculator */
-.theme-one
+.calc-theme-1
   --main-background: hsl(222, 26%, 31%)
   --toggle-background: hsl(223, 31%, 20%)
   --screen-background: hsl(224, 36%, 15%)
@@ -25,7 +25,7 @@
   --text-white: hsl(0, 0%, 100%)
   --text-main: hsl(221, 14%, 31%)
 
-.theme-two
+.calc-theme-2
   --main-background: hsl(0, 0%, 90%)
   --toggle-background: hsl(0, 5%, 81%)
   --screen-background: hsl(0, 0%, 93%)
@@ -38,10 +38,10 @@
   --text-white: hsl(0, 0%, 100%)
   --text-main: hsl(60, 10%, 19%)
 
-.theme-two
+.calc-theme-3
   --main-background: hsl(268, 75%, 9%)
   --toggle-background: hsl(268, 71%, 12%)
-  --screen-background: lime
+  --screen-background: hsl(268, 71%, 12%)
   --key-background-one: hsl(281, 89%, 26%)
   --key-shadow-one: hsl(285, 91%, 52%)
   --key-toggle-background: hsl(176, 100%, 44%)
@@ -53,6 +53,7 @@
   --text-second: hsl(198, 20%, 13%)
 
 .site-main
+  background: var(--main-background)
   z-index: 99
   h1
     position: absolute

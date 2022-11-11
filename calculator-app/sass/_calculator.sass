@@ -1,5 +1,6 @@
 @use 'calc_header'
 
+
 .calculator
   display: flex
   flex-flow: column wrap
@@ -26,6 +27,23 @@
   letter-spacing: -1px
   color: var(--text-white)
 
+// targeted selector for themes
+.calc-theme-2
+  .calc-title
+    color: var(--text-main)
+  .theme-selector-panel
+    color: var(--text-main)
+  .calc-screen p
+    color: var(--text-main)
+
+.calc-theme-3
+  .calc-title
+    color: var(--text-main)
+  .theme-selector-panel
+    color: var(--text-main)
+  .calc-screen p
+    color: var(--text-main)
+
 // CALCULATOR BUTTONS
 .calc-keypad
   display: grid
@@ -39,6 +57,9 @@
   li
     border-radius: 6px
     background: var(--key-shadow-three)
+
+    button
+      cursor: pointer
 
     button:active
       filter: contrast(1.5)
