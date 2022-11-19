@@ -50,7 +50,7 @@ final piece. **Click on an image to view live site.**
 
 ### Intermediate
 
-_coming soon ..._
+[<img src="./calculator-app/screenshot.png" width="232" alt="calculator app screenshot">](https://web-shuriken.github.io/frontend-mentor-my-solutions/calculator-app/)
 
 ### Advanced
 
