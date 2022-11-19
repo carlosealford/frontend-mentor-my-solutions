@@ -1,0 +1,142 @@
+@use 'calc_header'
+
+
+.calculator
+  display: flex
+  flex-flow: column wrap
+  row-gap: 32px
+  width: 375px
+  padding: .7rem
+  background: var(--main-background)
+
+.calc-body
+  display: flex
+  flex-flow: column wrap
+  row-gap: 24px
+
+// CALCULATOR SCREEN
+.calc-screen
+  border-radius: 0.3rem
+  height: 88px
+  background: var(--screen-background)
+
+.calc-screen-value
+  padding: 0.76rem 0.8rem
+  font-size: 1.3rem
+  text-align: right
+  letter-spacing: -1px
+  color: var(--text-white)
+
+// targeted selector for themes
+.calc-theme-2
+  .calc-title
+    color: var(--text-main)
+  .theme-selector-panel
+    color: var(--text-main)
+  .calc-screen p
+    color: var(--text-main)
+
+.calc-theme-3
+  .calc-title
+    color: var(--text-main)
+  .theme-selector-panel
+    color: var(--text-main)
+  .calc-screen p
+    color: var(--text-main)
+
+// CALCULATOR BUTTONS
+.calc-keypad
+  display: grid
+  grid-template-columns: repeat(4, 60px)
+  grid-template-rows: repeat(5, 64px)
+  gap: 13px
+  padding: 24px 26px
+  border-radius: 8px
+  background: var(--toggle-background)
+
+  li
+    border-radius: 6px
+    background: var(--key-shadow-three)
+
+    button
+      cursor: pointer
+
+    button:active
+      filter: contrast(1.5)
+
+    // DEL and RESET buttons
+    &:nth-child(4)
+      background: var(--key-shadow-one)
+
+      button
+        background: var(--key-background-one)
+        color: var(--text-white)
+        font-size: .6rem
+        &:active
+          filter: brightness(1.5)
+  
+    &:nth-child(17)
+      grid-column: 1 / 3
+      background: var(--key-shadow-one)
+
+      button
+        background: var(--key-background-one)
+        color: var(--text-white)
+        font-size: .6rem
+        &:active
+          filter: brightness(1.5)
+  
+    // EQUALS button
+    &:nth-child(18)
+      grid-column: 3 / 5
+      background: var(--key-shadow-two)
+
+      button
+        background: var(--key-toggle-background)
+        color: var(--text-white)
+        &:active
+          filter: brightness(1.5)
+
+.calc-keypad-keys
+  height: 60px
+  width: 100%
+  border-radius: 6px
+  padding-top: 7px
+  font-family: "League Spartan"
+  font-size: 1rem
+  background: var(--key-background-three)
+  color: var(--text-main)
+  z-index: 44
+
+// Make the calculator bigger on large screens
+@media (min-width: 1200px) and (min-height: 800px)
+  .site-main
+    padding-top: 2.1rem
+
+  .calculator
+    width: 588px
+  
+  .calc-screen
+    height: 127px
+    p
+      padding: 1.2rem 1rem
+      font-size: 1.8rem
+  
+  .calc-keypad
+    grid-template-columns: repeat(4, 100px)
+    grid-template-rows: repeat(5, 66px)
+    gap: 22px 26px
+    padding: 32px
+  
+  .calc-keypad-keys
+    font-size: 1.2rem
+
+    &:nth-child(4)>button
+        font-size: .8rem
+  
+    &:nth-child(17)>button
+        font-size: .8rem
+  
+    // EQUALS button
+    &:nth-child(18)>button
+        font-size: 1rem
