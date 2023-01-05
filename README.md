@@ -34,23 +34,23 @@ final piece. **Click on an image to view live site.**
 
 ### Newbie
 
-[<img src="./profile-card-component/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/profile-card-component/)
-[<img src="./order-summary-component/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/order-summary-component/)
-[<img src="./stats-preview-card/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/stats-preview-card/)
-[<img src="./3-column-preview-card/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/3-column-preview-card/)
-[<img src="./social-proof-section/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/social-proof-section/)
-[<img src="./four-card-feature/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/four-card-feature/)
-[<img src="./article-preview-component/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/article-preview-component/)
-[<img src="./base-apparel-coming-soon-master/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/base-apparel-coming-soon-master/)
+[<img src="./profile-card-component/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/profile-card-component/)
+[<img src="./order-summary-component/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/order-summary-component/)
+[<img src="./stats-preview-card/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/stats-preview-card/)
+[<img src="./3-column-preview-card/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/3-column-preview-card/)
+[<img src="./social-proof-section/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/social-proof-section/)
+[<img src="./four-card-feature/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/four-card-feature/)
+[<img src="./article-preview-component/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/article-preview-component/)
+[<img src="./base-apparel-coming-soon-master/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/base-apparel-coming-soon-master/)
 
 ### Junior
 
-[<img src="./tip-calculator/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/tip-calculator/)
-[<img src="./time-tracking-dashboard/screenshot.png" width="232" alt="something to show">](https://web-shuriken.github.io/frontend-mentor-my-solutions/time-tracking-dashboard/dist/)
+[<img src="./tip-calculator/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/tip-calculator/)
+[<img src="./time-tracking-dashboard/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/time-tracking-dashboard/dist/)
 
 ### Intermediate
 
-[<img src="./calculator-app/screenshot.png" width="232" alt="calculator app screenshot">](https://web-shuriken.github.io/frontend-mentor-my-solutions/calculator-app/)
+[<img src="./calculator-app/screenshot.png" width="232" alt="calculator app screenshot">](https://webshuriken.github.io/frontend-mentor-my-solutions/calculator-app/)
 
 ### Advanced
 
