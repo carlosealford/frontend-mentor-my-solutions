@@ -1,7 +1,8 @@
 /**
  * author: Carlos E Alford @webshuriken
- * version: 1.0
+ * version: 1.1
  * created: 11-11-2022
+ * updated: 28-05-2023
  */
 
 var leftOperand = '', rightOperand = '', total = 0, operator;
@@ -14,6 +15,11 @@ var displayLimit = 14;
 
 // active calculator theme
 var activeTheme = 'calc-theme-1';
+
+// can we use cookies
+const calculatorCookies = {
+  allowed: false
+}
 
 /**
  * @description updates the html with calculator values
@@ -151,6 +157,8 @@ calcKeypad.addEventListener('click', function buttonPressed(e) {
   }
 });
 
+// THEME FUNCTIONALITY
+
 // theme slider listener
 var themeSlider = document.querySelector('#themeSelectorRange');
 themeSlider.addEventListener('change', function getSliderValue(e) {
@@ -176,30 +184,16 @@ function updateCalcTheme(theme, atLoadInit = false) {
   // add selected theme
   calculator.classList.toggle(theme);
 
-  // only run at load time
+  // only run at load time, sets the theme slider to the right position
   if (atLoadInit) {
     let themeID = theme.substring(theme.length - 1);
     let value = themeID == 1 ? 0 : themeID == 2 ? 50 : 100;
     themeSlider.value = value;
-  }else {
+  }
+  if (calculatorCookies.allowed) {
     updateStorageSettings();
   }
 }
-
-/**
- * @description load localstorage settings or setup anew
- */
-(function loadLocalStorage() {
-  // check localStorage is available
-  if (storageAvailable) {
-    var themeSettings = localStorage.getItem('calculator-app');
-    if (themeSettings) {
-      updateCalcTheme(themeSettings, true);
-    }else {
-      updateStorageSettings();
-    }
-  }
-})()
 
 /**
  * @description updates localStorage with the latest theme value
@@ -221,7 +215,61 @@ function storageAvailable() {
     return true;
   } catch(e) {
     console.error('localstorage: ', e.message);
+    return false;
   }
 }
 
+/**
+ * @description add the listeners to the cookie panel
+ */
+function setupCookingPanel() {
+  const cookiesPanel = document.querySelector('.cookie-panel');
+  cookiesPanel.style.display = "flex";
+  const cookieBtns = document.querySelectorAll('.cookie-buttons');
 
+  return new Promise(resolve => {
+    // we only need it to check the response from user
+    function userResponse(event) {
+      const response = event.target.dataset.cookieButton;
+      if (response == 'accept') {
+        updateStorageSettings();
+        calculatorCookies.allowed = true;
+      }
+      if (response == 'decline') {
+        console.log("User have chosen NO COOKIES");
+      }
+      // resolve the promise when a user selects an option
+      resolve({cookieBtns, userResponse, cookiesPanel});
+    }
+    // set button listeners
+    cookieBtns.forEach(button => {
+      button.addEventListener('click', userResponse);
+    });
+  });
+}
+
+/**
+ * @description load all settings for the calculator
+ */
+(async function initCalculatorSetup() {
+  // before worrying about asking for permission and cookies, make sure we can use localstorage
+  if (storageAvailable) {
+    // have we setup localstorage already?
+    const themeSettings = localStorage.getItem('calculator-app');
+    // when localstorage doesnt exist lets display the cookie panel
+    if (!themeSettings) {
+      const userCookies = setupCookingPanel();
+      userCookies.then(({cookieBtns, userResponse, cookiesPanel}) => {
+        // remove event listeners
+        cookieBtns.forEach(btn => {
+          btn.removeEventListener('click', userResponse);
+        });
+        // remove cookie panel from vision
+        cookiesPanel.style.display = "none";
+      })
+    }else{
+      // if it settings are available use them
+      updateCalcTheme(themeSettings, true);
+    }
+  }
+})()

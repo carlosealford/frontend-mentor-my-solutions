@@ -1,0 +1,43 @@
+.cookie-panel
+  display: none
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  position: absolute
+  left: 0
+  bottom: 0
+  height: auto
+  width: 100%
+  padding: 1rem
+  background-color: rgba(255, 255, 255, .8)
+  z-index: 111
+
+  p
+    margin-bottom: 1rem
+    font-size: .8rem
+    color: black
+
+  div
+    display: flex
+    justify-content: space-evenly
+    gap: .6rem
+    width: 100%
+
+    button
+      border-radius: 12px
+      border-width: 1px
+      border-style: solid
+      padding: 0.4rem 0.8rem
+      font-size: .6rem
+      transition: trasnform .24s
+      &:nth-child(1) 
+        border-color: rgb(55, 127, 134)
+        color: rgb(55, 127, 134)
+        font-weight: bold
+      &:nth-child(2) 
+        border-color: rgb(202, 85, 2)
+        color: rgb(202, 85, 2)
+      &:hover
+        cursor: pointer
+      &:active
+        transform: scale(.9)

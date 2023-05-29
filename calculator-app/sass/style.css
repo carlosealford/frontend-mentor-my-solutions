@@ -77,7 +77,7 @@
   width: 100%;
 }
 .attribution a {
-  color: #3e52a3;
+  color: hsl(228, 45%, 44%);
 }
 @media (min-width: 1440px) {
   .attribution {
@@ -317,11 +317,9 @@
   .site-main {
     padding-top: 2.1rem;
   }
-
   .calculator {
     width: 588px;
   }
-
   .calc-screen {
     height: 127px;
   }
@@ -329,14 +327,12 @@
     padding: 1.2rem 1rem;
     font-size: 1.8rem;
   }
-
   .calc-keypad {
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: repeat(5, 66px);
     gap: 22px 26px;
     padding: 32px;
   }
-
   .calc-keypad-keys {
     font-size: 1.2rem;
   }
@@ -350,6 +346,55 @@
     font-size: 1rem;
   }
 }
+.cookie-panel {
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 111;
+}
+.cookie-panel p {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: black;
+}
+.cookie-panel div {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.6rem;
+  width: 100%;
+}
+.cookie-panel div button {
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.6rem;
+  transition: trasnform 0.24s;
+}
+.cookie-panel div button:nth-child(1) {
+  border-color: rgb(55, 127, 134);
+  color: rgb(55, 127, 134);
+  font-weight: bold;
+}
+.cookie-panel div button:nth-child(2) {
+  border-color: rgb(202, 85, 2);
+  color: rgb(202, 85, 2);
+}
+.cookie-panel div button:hover {
+  cursor: pointer;
+}
+.cookie-panel div button:active {
+  transform: scale(0.9);
+}
+
 .site-main {
   display: flex;
   align-content: center;
