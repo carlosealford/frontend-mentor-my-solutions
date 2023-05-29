@@ -75,15 +75,17 @@
   padding: 16px 0;
   text-align: center;
   width: 100%;
+  background-color: white;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media (min-width: 1440px) {
+@media (min-height: 682px) {
   .attribution {
     bottom: 16px;
     left: 0;
     position: absolute;
+    z-index: 99;
   }
 }
 
@@ -397,8 +399,9 @@
 
 .site-main {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
