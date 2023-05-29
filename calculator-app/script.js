@@ -268,6 +268,7 @@ function setupCookingPanel() {
         cookiesPanel.style.display = "none";
       })
     }else{
+      calculatorCookies.allowed = true;
       // if it settings are available use them
       updateCalcTheme(themeSettings, true);
     }
