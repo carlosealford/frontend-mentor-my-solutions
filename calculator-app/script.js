@@ -33,18 +33,20 @@ function updateDisplay(value) {
  * @description Formats the calculation result to make sure it fits display limit
  */
 function prepareResultForScreen() {
+  // TODO: SNEAKY BASTARD, here the total is becoming a full stop when its a negative number
   // separate whole and decimal numbers. decimals will loose any trailing zeros.
-  const re = /(\d*)\.?([^0]{0,4})/;
-  let [,wholeNumbers, decimalNumbers] = String(total).match(re);
-
+  const re = /(-?\d*)\.?([^0]{0,4})/;
+  let [wholeMatch,wholeNumbers, decimalNumbers] = String(total).match(re);
+  // removes the decimal point at the end of the first match
+  if (String(wholeNumbers).indexOf('.') != -1) {
+    wholeNumbers = wholeNumbers.substring(0,1);
+  }
   if (wholeNumbers.length > displayLimit) {
     total = 'Number too large';
   }else if (wholeNumbers.length == displayLimit || decimalNumbers.trim().length == 0) {
     total = wholeNumbers;
   }else {
-    let difference = displayLimit - (wholeNumbers.length + 1);
-    let decimal = decimalNumbers.match(`\\d{0,${difference}}`);
-    total = `${wholeNumbers}.${decimal}`;
+    total = `${wholeNumbers}.${decimalNumbers}`;
   }
 }
 
@@ -96,7 +98,7 @@ function actOnOperator(op) {
       // track the operator +, -, / or * and stop storing input in the left hand operand
       if (storeInLeftOperand) {
         storeInLeftOperand = false;
-      }else {
+      }else if(rightOperand != '') {
         calculateTotal();
       }
       operator = op;
@@ -124,9 +126,10 @@ function calculateTotal() {
     default:
       console.error("You have fallen through the switch statement");
   }
-  
   // 4 decimal places is enough precision for this project
-  total = total.toFixed(4);
+  if ((total % 1) != 0) {
+    total = total.toFixed(4);
+  }
   // reset operand variables for next calculation
   leftOperand = String(total);
   rightOperand = '';
