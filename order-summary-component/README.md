@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/web-shuriken/order-summary-component)
-- Live URL: [Summary Component Site](https://web-shuriken.github.io/order-summary-component/)
+- Solution URL: [Github Repo](https://github.com/webshuriken/order-summary-component)
+- Live URL: [Summary Component Site](https://webshuriken.github.io/order-summary-component/)
 
 ## My process
 
