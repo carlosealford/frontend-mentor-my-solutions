@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/web-shuriken/3-column-preview-card)
-- Live URL: [3 Columns Preview Site](https://web-shuriken.github.io/3-column-preview-card/)
+- Solution URL: [Github Repo](https://github.com/webshuriken/3-column-preview-card)
+- Live URL: [3 Columns Preview Site](https://webshuriken.github.io/3-column-preview-card/)
 
 ## Setup
 
