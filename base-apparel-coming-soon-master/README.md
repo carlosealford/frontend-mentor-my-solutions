@@ -37,8 +37,8 @@ Your users should be able to:
 
 Here are the links to my solution on GitHub and the live page where you can check out the profile card on your browser.
 
-- Solution URL: [Github Repo](https://github.com/web-shuriken/frontend-mentor-my-solutions/tree/main/base-apparel-coming-soon-master)
-- Live URL: [Four Card Feature](https://web-shuriken.github.io/frontend-mentor-my-solutions/base-apparel-coming-soon-master/)
+- Solution URL: [Github Repo](https://github.com/webshuriken/frontend-mentor-my-solutions/tree/main/base-apparel-coming-soon-master)
+- Live URL: [Four Card Feature](https://webshuriken.github.io/frontend-mentor-my-solutions/base-apparel-coming-soon-master/)
 
 ## My process :computer:
 
