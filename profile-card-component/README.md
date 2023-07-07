@@ -33,8 +33,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 Here are the links to my solution on GitHub and the live page where you can check out the profile card on your browser.
 
-- Solution URL: [Github Repo](https://github.com/web-shuriken/profile-card-component/)
-- Live URL: [Profile Card Component Site](https://web-shuriken.github.io/profile-card-component/)
+- Solution URL: [Github Repo](https://github.com/webshuriken/profile-card-component/)
+- Live URL: [Profile Card Component Site](https://webshuriken.github.io/profile-card-component/)
 
 ### Setup
 
