@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/web-shuriken/frontend-mentor-my-solutions/tree/main/time-tracking-dashboard)
-- Live URL: [Time Tracking Dashboard](https://web-shuriken.github.io/frontend-mentor-my-solutions/time-tracking-dashboard/dist/)
+- Solution URL: [Github Repo](https://github.com/webshuriken/frontend-mentor-my-solutions/tree/main/time-tracking-dashboard)
+- Live URL: [Time Tracking Dashboard](https://webshuriken.github.io/frontend-mentor-my-solutions/time-tracking-dashboard/dist/)
 
 ## My process
 
