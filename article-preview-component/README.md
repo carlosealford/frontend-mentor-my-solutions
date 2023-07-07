@@ -38,8 +38,8 @@ Your users should be able to:
 
 Here are the links to my solution on GitHub and the live page where you can check out the profile card on your browser.
 
-- Solution URL: [Github Repo](https://github.com/web-shuriken/frontend-mentor-my-solutions/tree/main/article-preview-component)
-- Live URL: [Four Card Feature](https://web-shuriken.github.io/frontend-mentor-my-solutions/article-preview-component/)
+- Solution URL: [Github Repo](https://github.com/webshuriken/frontend-mentor-my-solutions/tree/main/article-preview-component)
+- Live URL: [Four Card Feature](https://webshuriken.github.io/frontend-mentor-my-solutions/article-preview-component/)
 
 ## My process :computer:
 
