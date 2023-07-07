@@ -51,6 +51,7 @@ final piece. **Click on an image to view live site.**
 ### Intermediate
 
 [<img src="./calculator-app/screenshot.png" width="232" alt="calculator app screenshot">](https://webshuriken.github.io/frontend-mentor-my-solutions/calculator-app/)
+[<img src="https://github.com/webshuriken/space-tourism-website/blob/main/screenshot.png" width="232" alt="space tourism screenshot">](https://webshuriken.github.io/space-tourism-website/)
 
 ### Advanced
 
