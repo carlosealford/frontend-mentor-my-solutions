@@ -53,7 +53,7 @@ main {
 /* CARD STYLES */
 .social-links-card {
   height: 580px;
-  width: max(327px, 100%);
+  width: min(327px, 100%);
   border-radius: 10px;
   padding: .8rem;
   background: var(--neutral-color-dark-grey);
