@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/webshuriken/frontend-mentor-my-solutions/tree/main/social-links-profile)
+- Live Site URL: [Live Site](https://webshuriken.github.io/frontend-mentor-my-solutions/social-links-profile/)
 
 ## My process
 
@@ -50,7 +50,6 @@ I want to be able to look at an idea and be able to estimate the time it would t
 The importance of planning is taken for granted a lot of the time. It may seem daunting but it will save a lot of time when it is time to develop the app!
 
 It took me a total of **2.2 hours** to setup, create both mobile and large screen versions and write the README with a screenshot. I stimated _1 hour and 20 minutes_. That is a total of 40 minutes more than expected.
-
 
 ### Continued development
 
