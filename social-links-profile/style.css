@@ -1,0 +1,24 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Weights: 400, 600, 700 */
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-VariableFont.ttf') format('truetype');
+}
+
+:root {
+  --primary-color: hsl(75, 94%, 57%);
+  --neutral-color-white: hsl(75, 94%, 57%);
+  --neutral-color-grey: hsl(0, 0%, 20%);
+  --neutral-color-dark-grey: hsl(0, 0%, 12%);
+  --neutral-color-black: hsl(0, 0%, 8%);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
