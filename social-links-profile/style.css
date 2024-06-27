@@ -1,5 +1,6 @@
 /* CSS Reset */
 * {
+  position: relative;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,10 +16,106 @@
 
 :root {
   --primary-color: hsl(75, 94%, 57%);
-  --neutral-color-white: hsl(75, 94%, 57%);
+  --neutral-color-white: hsl(0, 0%, 100%);
   --neutral-color-grey: hsl(0, 0%, 20%);
   --neutral-color-dark-grey: hsl(0, 0%, 12%);
   --neutral-color-black: hsl(0, 0%, 8%);
   font-size: 14px;
   font-family: 'Inter', sans-serif;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: var(--neutral-color-black);
+}
+
+/* CARD STYLES */
+.social-links-card {
+  height: 580px;
+  width: 327px;
+  border-radius: 10px;
+  padding: .8rem;
+  background: var(--neutral-color-dark-grey);
+}
+
+/* card header */
+.social-links-card .card-header {
+  display: flex;
+  flex-flow: column wrap;
+  gap: .6rem;
+  align-content: center;
+  padding: .8rem;
+}
+
+.social-links-card .card-header__user-profile {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: 90px;
+}
+.social-links-card .card-header__user-profile img {
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+}
+
+.social-links-card .card-header__user-name {
+  padding-top: 19px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: -1px;
+  word-spacing: 2px;
+  color: var(--neutral-color-white)
+}
+
+.social-links-card .card-header__user-location {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.social-links-card .card-header__user-description {
+  padding-top: 18px;
+  text-align: center;
+  color: var(--neutral-color-white)
+}
+
+/* card body */
+.card-body {
+  padding: 1rem;
+}
+
+.card-body .card-social-links {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1.1rem;
+}
+
+.card-body .social-links-button {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  height: 46px;
+  border-radius: 8px;
+  font-weight: 700;
+  background: var(--neutral-color-grey);
+  color: var(--neutral-color-white);
 }
