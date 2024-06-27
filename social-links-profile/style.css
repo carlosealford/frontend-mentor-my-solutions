@@ -107,7 +107,7 @@ main {
   padding: 1rem;
 }
 
-.card-body .card-social-links {
+.card-body .card-social-links-list {
   display: flex;
   flex-flow: column wrap;
   gap: 1.1rem;
@@ -123,6 +123,14 @@ main {
   font-weight: 700;
   background: var(--neutral-color-grey);
   color: var(--neutral-color-white);
+  transition: background .3s, color .3s, transform .3s;
+}
+.card-body .social-links-button:hover {
+  background: var(--primary-color);
+  color: var(--neutral-color-dark-grey);
+}
+.card-body .social-links-button:active {
+  transform: scale(.95);
 }
 
 @media (min-width: 768px) and (min-height: 700px) {
