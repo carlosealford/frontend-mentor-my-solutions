@@ -29,6 +29,11 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  padding-bottom: 1rem
+}
+.attribution, .attribution a {
+  color: var(--neutral-color-white);
+  text-align: center;
 }
 
 body {
@@ -48,7 +53,7 @@ main {
 /* CARD STYLES */
 .social-links-card {
   height: 580px;
-  width: 327px;
+  width: max(327px, 100%);
   border-radius: 10px;
   padding: .8rem;
   background: var(--neutral-color-dark-grey);
@@ -118,4 +123,12 @@ main {
   font-weight: 700;
   background: var(--neutral-color-grey);
   color: var(--neutral-color-white);
+}
+
+@media (min-width: 768px) and (min-height: 700px) {
+  .social-links-card {
+    height: 610px;
+    width: 378px;
+    padding: 1.9rem 1.5rem;
+  }
 }
