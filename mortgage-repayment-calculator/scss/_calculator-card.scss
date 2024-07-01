@@ -1,0 +1,15 @@
+// top, right, bottom, left
+$calculator-card: (
+  'calc-card': (
+    'padding': 2rem,
+    'margin': .7rem,
+  )
+);
+
+@each $name, $breakpoint in $calculator-card {
+  .#{$name} {
+    padding-top: map-get($breakpoint, 'padding');
+    padding-bottom: map-get($breakpoint, 'padding');
+    margin-left: map-get($breakpoint, 'margin');
+  }
+}
