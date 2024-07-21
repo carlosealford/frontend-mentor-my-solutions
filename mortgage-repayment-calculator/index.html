@@ -15,10 +15,10 @@
   <article class="container mortgage-calculator-card">
     <div class="row">
       <!-- LEFT SIDE of calculator -->
-      <div class="col-12 col-lg-7 calc-card">
+      <div class="col-12 col-lg-7 calc-card-section calc-card-section-left">
         <header class="row">
           <div class="col-12 col-md-10">
-            <h1 class="calc-heading">Mortgage Calculator</h1>
+            <h1 class="calc-h1 calc-font-bold">Mortgage Calculator</h1>
           </div>
           <div class="col-12 col-md-2">
             <button class="calc-btn-clear">Clear All</button>
@@ -27,64 +27,64 @@
         <!-- card BODY -->
         <div class="row">
           <!-- calculator form start -->
-          <form action="">
-            <div class="row mb-3 mt-3">
+          <form class="calc-form" action="">
+            <div class="row">
               <label for="mortgage-amount" class="col-12 col-form-label">Mortgage Amount</label>
-              <div class="col-12 input-group has-validation">
-                <span class="input-group-text">£</span>
-                <input type="number" class="form-control" id="mortgage-amount" name="mortgage-amount" required>
+              <div class="col-12 input-group calc-input-group has-validation">
+                <span class="input-group-text calc-input-group-text calc-font-bold">£</span>
+                <input type="number" class="form-control calc-form-control calc-font-bold" id="mortgage-amount" name="mortgage-amount" required value="300,000">
                 <div class="invalid-feedback">This field is required</div>
               </div>
             </div>
-            <div class="row mb-3 mt-3">
+            <div class="row">
               <label for="mortgage-term" class="col-12 col-form-label">Mortgage Term</label>
-              <div class="col-12 input-group has-validation">
-                <input type="number" class="form-control" id="mortgage-term" name="mortgage-term" required>
-                <span class="input-group-text">years</span>
+              <div class="col-12 input-group calc-input-group has-validation">
+                <input type="number" class="form-control calc-form-control calc-font-bold" id="mortgage-term" name="mortgage-term" required value="25">
+                <span class="input-group-text calc-input-group-text calc-font-bold">years</span>
                 <div class="invalid-feedback">This field is required</div>
               </div>
             </div>
-            <div class="row mb-3 mt-3">
+            <div class="row">
               <label for="mortgage-rate" class="col-12 col-form-label">Interest Rate</label>
-              <div class="col-12 input-group has-validation">
-                <input type="number" class="form-control" id="mortgage-rate" name="mortgage-rate" required>
-                <span class="input-group-text">%</span>
+              <div class="col-12 input-group calc-input-group has-validation">
+                <input type="number" class="form-control calc-form-control calc-font-bold" id="mortgage-rate" name="mortgage-rate" required value="5.25">
+                <span class="input-group-text calc-input-group-text calc-font-bold">%</span>
                 <div class="invalid-feedback">This field is required</div>
               </div>
             </div>
-            <fieldset class="row">
+            <fieldset class="row pb-3">
               <legend class="col-form-label col-12">Mortgage Type</legend>
-              <div class="col-12">
-                <div class="form-check border rounded p-2">
+              <div class="col-12 calc-form-check-wrapper calc-font-bold">
+                <div class="form-check border rounded">
                   <input class="form-check-input" type="radio" id="repayments" name="mortgageType" value="replayment" required>
-                  <label class="form-check-label" for="repayments">Repayment</label>
+                  <label class="form-check-label calc-font-bold" for="repayments">Repayment</label>
                 </div>
-                <div class="form-check border rounded p-2">
+                <div class="form-check border rounded">
                   <input class="form-check-input" type="radio" id="interestOnly" name="mortgageType" value="interest only" required>
-                  <label class="form-check-label" for="interestOnly">Interest Only</label>
+                  <label class="form-check-label calc-font-bold" for="interestOnly">Interest Only</label>
                   <div class="invalid-feedback">This field is required</div>
                 </div>
               </div>
             </fieldset>
-            <button class="btn btn-primary w-100" type="submit">
-              <img class="col-2" src="assets/images/icon-calculator.svg" alt="calculator icon">
-              <span class="col-10">Calculate Repayments</span>
+            <button class="btn btn-primary rounded-pill calc-submit-btn" type="submit">
+              <img class="img-fluid align-bottom" src="assets/images/icon-calculator.svg" alt="calculator icon">
+              <span class="col-10 calc-font-bold">Calculate Repayments</span>
             </button>
           </form>
           <!-- calculator form end -->
         </div>
       </div>
       <!-- RIGHT SIDE of calculator -->
-      <div class="col-12 col-lg-5">
+      <div class="col-12 col-lg-5 position-relative calc-card-section calc-card-section-right calc-pb-10">
         <!-- Empty results start -->
-        <div class="row text-center">
-          <img class="img-fluid" src="assets/images/illustration-empty.svg" alt="calculator with pen, money sign icons">
-          <p class="col-12">Results shown here</p>
-          <p class="col-12">Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+        <div class="row text-center calc-results-section calc-show">
+          <img class="img-fluid calc-results-image" src="assets/images/illustration-empty.svg" alt="calculator with pen, money sign icons">
+          <h2 class="col-12 pt-3 neutral-white calc-h1 calc-font-bold">Results shown here</h2>
+          <p class="col-12 calc-pt-6 neutral-slate-300">Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
         </div>
         <!-- Empty results end -->
         <!-- Completed results start -->
-        <div class="row">
+        <div class="row calc-results-section calc-hide calc-pb-10">
           <p class="col-12">Your results</p>
           <p class="col-12">Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
           <div class="col-12">
@@ -106,6 +106,7 @@
     <p>Coded by <a href="https://carloselalford.com">Web Shuriken</a>.</p>
   </footer>
   <img src="design/mobile-design-empty.jpg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: auto; opacity: .4">
+  <!-- <img src="design/mobile-design-completed.jpg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: auto; opacity: .4"> -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
