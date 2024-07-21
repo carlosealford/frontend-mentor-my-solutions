@@ -1,0 +1,37 @@
+:root {
+  --primary-red: hsl(4, 69%, 50%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-slate-100: hsl(202, 86%, 94%);
+  --neutral-slate-300: hsl(203, 41%, 72%);
+  --neutral-slate-500: hsl(200, 26%, 54%);
+  --neutral-slate-700: hsl(200, 24%, 40%);
+  --neutral-slate-900: hsl(202, 55%, 16%);
+}
+
+.primary-red {
+  color: var(--primary-red);
+}
+
+.neutral-white {
+  color: var(--neutral-white);
+}
+
+.neutral-slate-100 {
+  color: var(--neutral-slate-100);
+}
+
+.neutral-slate-300 {
+  color: var(--neutral-slate-300);
+}
+
+.neutral-slate-500 {
+  color: var(--neutral-slate-500);
+}
+
+.neutral-slate-700 {
+  color: var(--neutral-slate-700);
+}
+
+.neutral-slate-900 {
+  color: var(--neutral-slate-900);
+}
