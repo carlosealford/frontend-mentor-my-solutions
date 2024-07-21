@@ -1,0 +1,134 @@
+$calculator-form: (
+  'calc-form': (
+    'padding': 1rem,
+    'background': var(--neutral-white),
+    'border': transparent,
+  ),
+);
+
+@each $name, $form in $calculator-form {
+  .#{$name} {
+    padding-top: map-get($form, 'padding');
+    background-color: map-get($form, 'background');
+    border: map-get($form, 'border');
+  
+    > div {
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+$form-input-group: (
+  'calc-input-group': (
+    'padding': .28rem,
+  ),
+);
+
+@each $name, $property in $form-input-group {
+  .#{$name} {
+    padding-top: map-get($property, 'padding');
+  }
+}
+
+$form-input-group-text: (
+  'calc-input-group-text': (
+    'padding': 0 1rem,
+    'font-size': 1.1rem,
+  ),
+);
+
+@each $name, $property in $form-input-group-text {
+  .#{$name} {
+    padding: map-get($property, 'padding');
+    font-size: map-get($property, 'font-size');
+  }
+}
+
+$form-control: (
+  'calc-form-control': (
+    'padding': .68rem 1rem,
+    'font-size': 1.1rem,
+  ),
+);
+
+@each $name, $property in $form-control {
+  .#{$name} {
+    padding: map-get($property, 'padding');
+    font-size: map-get($property, 'font-size');
+  }
+}
+
+$form-control-radio-wrapper: (
+  'calc-form-check-wrapper': (
+    'wrapper': (
+      'padding': .1rem,
+      'font-size': 1.1rem,
+    ),
+    'form-check': (
+      'border': 1px solid red,
+      'border-radius': 6px,
+      'padding': .75rem,
+    ),
+    'font-check-input': (
+      'height': 1.1rem,
+      'width': 1.1rem,
+      'margin': .4rem,
+    ),
+    'form-check-label': (
+      'padding': 1.28rem,
+    ),
+  ),
+);
+
+@each $name, $selector in $form-control-radio-wrapper {
+  .#{$name} {
+    padding-top: map-get(map-get($selector, 'wrapper'), 'padding');
+    font-size: map-get(map-get($selector, 'wrapper'), 'font-size');
+    
+    .form-check {
+      border: map-get(map-get($selector, 'form-check'), 'border');
+      border-radius: map-get(map-get($selector, 'form-check'), 'border-radius');
+      padding: map-get(map-get($selector, 'form-check'), 'padding');
+      
+      .form-check-input {
+        height: map-get(map-get($selector, 'font-check-input'), 'height');
+        width: map-get(map-get($selector, 'font-check-input'), 'width');
+        margin-left: map-get(map-get($selector, 'font-check-input'), 'margin');
+      }
+      
+      .form-check-label {
+        padding-left: map-get(map-get($selector, 'form-check-label'), 'padding');
+      }
+    }
+
+    :first-child {
+      margin-bottom: .45rem;
+    }
+
+  }
+}
+
+$form-submit-btn: (
+  'calc-submit-btn': (
+    'width': 100%,
+    'padding': .9rem 0,
+    'margin': .2rem,
+    'btn-text': (
+      'font-size': 1.12rem,
+      'margin': .6rem,
+    ),
+  ),
+);
+
+@each $name, $property in $form-submit-btn {
+  .#{$name} {
+    padding: map-get($property, 'padding');
+    margin-top: map-get($property, 'margin');
+    width: map-get($property, 'width');
+
+    > span {
+      margin-left: map-get(map-get($property, 'btn-text'), 'margin');
+      font-size: map-get(map-get($property, 'btn-text'), 'font-size');
+    }
+  }
+}
