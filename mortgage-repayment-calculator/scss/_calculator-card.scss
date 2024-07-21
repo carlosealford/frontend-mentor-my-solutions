@@ -1,15 +1,60 @@
 // top, right, bottom, left
 $calculator-card: (
-  'calc-card': (
-    'padding': 2rem,
-    'margin': .7rem,
+  'calc-card-section': (
+    'padding': 2rem 1.47rem,
+    'left': (
+      'background': var(--neutral-white),
+    ),
+    'right': (
+      'background': var(--neutral-slate-900),
+    ),
   )
 );
 
-@each $name, $breakpoint in $calculator-card {
+@each $name, $property in $calculator-card {
   .#{$name} {
-    padding-top: map-get($breakpoint, 'padding');
-    padding-bottom: map-get($breakpoint, 'padding');
-    margin-left: map-get($breakpoint, 'margin');
+    padding: map-get($property, 'padding');
+
+    &.calc-card-section-right {
+      background-color: map-get(map-get($property, 'right'), 'background');
+    }
+
+    &.calc-card-section-left {
+      background-color: map-get(map-get($property, 'left'), 'background');
+    }
+  }
+}
+
+// targets the results section.
+$calculator-results-section: (
+  'calc-results-section': (
+    'overflow': hidden,
+    'transition': 'all 0.5s ease',
+    'show': (
+      'display': block,
+      'opacity': 1,
+    ),
+    'hide': (
+      'display': none,
+      'opacity': 0,
+    ),
+  ),
+);
+
+@each $name, $property in $calculator-results-section {
+  .#{$name} {
+    padding: map-get($property, 'padding');
+    overflow: map-get($property, 'overflow');
+    transition: map-get($property, 'transition');
+
+    &.calc-show {
+      display: map-get(map-get($property, 'show'), 'display');
+      opacity: map-get(map-get($property, 'show'), 'opacity');
+    }
+
+    &.calc-hide {
+      display: map-get(map-get($property, 'hide'), 'display');
+      opacity: map-get(map-get($property, 'hide'), 'opacity');
+    }
   }
 }
