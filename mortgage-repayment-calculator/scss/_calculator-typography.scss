@@ -1,0 +1,43 @@
+$calculator-font-family: (
+  'calc-font-medium': (
+    'family': 'plus-jakartasans-medium',
+  ),
+  'calc-font-bold': (
+    'family': 'plus-jakartasans-bold',
+  )
+);
+
+@each $name, $font in $calculator-font-family {
+  .#{$name} {
+    font-family: map-get($font, 'family');
+  }
+}
+
+// all font related styles are in this file
+$calculator-heading-sizes: (
+  'calc-h1': (
+    'font-size': 1.5rem
+  ),
+  'calc-h2': (
+    'font-size': 1.25rem
+  ),
+  'calc-h3': (
+    'font-size': 1rem
+  ),
+  'calc-h4': (
+    'font-size': 0.75rem
+  ),
+  'calc-h5': (
+    'font-size': 0.5rem
+  ),
+  'calc-h6': (
+    'font-size': 0.25rem
+  ),
+);
+
+@each $name, $property in $calculator-heading-sizes {
+  .#{$name} {
+    font-size: map-get($property, 'font-size');
+    line-height: map-get($property, 'line-height');
+  }
+}
