@@ -1,0 +1,28 @@
+$clear-button: (
+  'calc-btn-clear': (
+    'background': transparent,
+    'color': var(--neutral-slate-500),
+    'border': transparent,
+    'padding': .1rem 0 0,
+    'radius': 0,
+    'text-decoration': underline,
+    'hover': (
+      'color': var(--neutral-slate-700),
+    ),
+  ),
+);
+
+@each $name, $button in $clear-button {
+  .#{$name} {
+    background-color: map-get($button, 'background');
+    color: map-get($button, 'color');
+    border: map-get($button, 'border');
+    padding: map-get($button, 'padding');
+    border-radius: map-get($button, 'radius');
+    text-decoration: map-get($button, 'text-decoration');
+
+    &:hover {
+      color: map-get(map-get($button, 'hover'), 'color');
+    }
+  }
+}
