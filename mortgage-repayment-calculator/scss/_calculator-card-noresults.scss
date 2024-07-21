@@ -1,0 +1,20 @@
+// results placeholder
+$calculator-results-image: (
+  'xs': (
+    'width': 215px,
+  ),
+  'md': (
+    'width': 230px,
+  ),
+  'lg': (
+    'width': 250px,
+  )
+);
+
+.calc-results-image {
+  @each $breakpoint, $property in $calculator-results-image {
+    @include media-breakpoint-up($breakpoint) {
+      width: map-get($property, 'width');
+    }
+  }
+}
