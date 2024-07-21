@@ -1,0 +1,48 @@
+// folling the same pattern used by bootstrap
+// {property}{sides}-{breakpoint}-{size}
+$calculator-padding-sizes: (
+  '6': (
+    'pt': 0.6,
+  ),
+  '10': (
+    'pb': 1,
+  )
+);
+
+@each $breakpoint, $breakpoingvalue in $grid-breakpoints {
+  @include media-breakpoint-up($breakpoint) {
+    @each $size, $sides in $calculator-padding-sizes {
+      @each $side, $value in $sides {
+        @if $breakpoint == 'xs' {
+          .calc-#{$side}-#{$size} {
+            @if $side =='p' {
+              padding: $value + rem;
+            } @else if $side == 'pt' {
+              padding-top: $value + rem;
+            } @else if $side == 'pr' {
+              padding-right: $value + rem;
+            } @else if $side == 'pb' {
+              padding-bottom: $value + rem;
+            } @else if $side == 'pl' {
+              padding-left: $value + rem;
+            }
+          }
+        } @else {
+          .calc-#{$side}-#{$breakpoint}-#{$size} {
+            @if $side =='p' {
+              padding: $value + rem;
+            } @else if $side == 'pt' {
+              padding-top: $value + rem;
+            } @else if $side == 'pr' {
+              padding-right: $value + rem;
+            } @else if $side == 'pb' {
+              padding-bottom: $value + rem;
+            } @else if $side == 'pl' {
+              padding-left: $value + rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
