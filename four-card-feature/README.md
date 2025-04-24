@@ -2,19 +2,6 @@
 
 This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The challenge
@@ -31,8 +18,8 @@ Users should be able to:
 
 Here are the links to my solution on GitHub and the live page where you can check out the profile card on your browser.
 
-- Solution URL: [Github Repo](https://github.com/webshuriken/frontend-mentor-my-solutions/tree/main/four-card-feature)
-- Live URL: [Four Card Feature](https://webshuriken.github.io/frontend-mentor-my-solutions/four-card-feature/)
+- Solution URL: [Github Repo](https://github.com/carlosealford/frontend-mentor-my-solutions/tree/main/four-card-feature)
+- Live URL: [Four Card Feature](https://carlosealford.github.io/frontend-mentor-my-solutions/four-card-feature/)
 
 ## My process :computer:
 
@@ -66,12 +53,16 @@ brick bond style.
 
 Even though it is stronger than when the challenge begun I could always do with more practice using Grids.
 
+## Acknowledgments
+
+To the whole Dev Community, keep dreaming and innovating. Thank you all. :smile:
+
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
 - Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
-- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
+- X (Twitter) - [@webshuriken](https://www.x.com/webshuriken)
 
-## Acknowledgments
+## License
 
-To the whole Dev Community, keep dreaming and innovating. Thank you all. :smile:
+[MIT License](../LICENSE)
