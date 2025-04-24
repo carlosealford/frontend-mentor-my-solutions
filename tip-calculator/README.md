@@ -2,20 +2,6 @@
 
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The challenge
@@ -32,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/webshuriken/tip-calculator)
-- Live URL: [Tip Calculator Site](https://webshuriken.github.io/tip-calculator/)
+- Solution URL: [Github Repo](https://github.com/carlosealford/tip-calculator)
+- Live URL: [Tip Calculator Site](https://carlosealford.github.io/tip-calculator/)
 
 ## My process
 
@@ -76,12 +62,16 @@ This project showed me that there are a few bits which I need to work on some mo
 - [CSS-TRICKS - grids](https://css-tricks.com/snippets/css/complete-guide-grid/) - Their guide for CSS grids is fantastic. Each section has a visual example which really helps to understand what a property does.
 - [MDN Web Docs - data](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) - Small documentation but it says what you need to know about using the HTML `data-` attribute.
 
+## Acknowledgments
+
+Credit goes to the documentation and the people involved in writing it. See the **Useful resources** section.
+
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
 - Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
-- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
+- X (Twitter) - [@webshuriken](https://www.x.com/webshuriken)
 
-## Acknowledgments
+## License
 
-Credit goes to the documentation and the people involved in writing it. See the **Useful resources** section.
+[MIT License](../LICENSE)
