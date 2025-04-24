@@ -2,20 +2,6 @@
 
 This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The challenge
@@ -32,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/webshuriken/frontend-mentor-my-solutions/tree/main/time-tracking-dashboard)
-- Live URL: [Time Tracking Dashboard](https://webshuriken.github.io/frontend-mentor-my-solutions/time-tracking-dashboard/dist/)
+- Solution URL: [Github Repo](https://github.com/carlosealford/frontend-mentor-my-solutions/tree/main/time-tracking-dashboard)
+- Live URL: [Time Tracking Dashboard](https://carlosealford.github.io/frontend-mentor-my-solutions/time-tracking-dashboard/dist/)
 
 ## My process
 
@@ -94,12 +80,6 @@ working to improve my knowledge.
 The documentation taught me with examples how to do some tasks.
 It has a lot of good examples.
 
-## Author
-
-- Website - [Carlos E Alford M](https://carlosealford.com)
-- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
-- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
-
 ## Acknowledgments
 
 My acknowledgment goes out to all those people working hard.
@@ -107,3 +87,13 @@ It is the grind which makes things like SASS and Webpack come to be.
 
 Thanks to you all. Also for taking the time to document it, even
 if sometimes the documents could do with better explanations. :smile:
+
+## Author
+
+- Website - [Carlos E Alford M](https://carlosealford.com)
+- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
+- X (Twitter) - [@webshuriken](https://www.x.com/webshuriken)
+
+## License
+
+[MIT License](../LICENSE)

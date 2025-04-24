@@ -2,20 +2,6 @@
 
 This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The challenge
@@ -30,8 +16,8 @@ Users should be able to:
 
 ### Links :link:
 
-- Solution URL: [Github Repo](https://github.com/webshuriken/social-proof-section)
-- Live URL: [Social Proof Section Site](https://webshuriken.github.io/social-proof-section/)
+- Solution URL: [Github Repo](https://github.com/carlosealford/social-proof-section)
+- Live URL: [Social Proof Section Site](https://carlosealford.github.io/social-proof-section/)
 
 ## My process
 
@@ -71,12 +57,16 @@ Although I feel comfortable with CSS, Semantic HTML5 and SASS there is always ro
 - [SASS Basics](https://sass-lang.com/guide) - The guide only showes you the surface but is good for reference while you get used to the concepts.
 - [A complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - Excellent resource for learning and reference. Visual and written examples.
 
+## Acknowledgments :clap:
+
+Credit goes to the documentation and the people involved in writing it. See the **Useful resources** section.
+
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
 - Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
-- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
+- X (Twitter) - [@webshuriken](https://www.x.com/webshuriken)
 
-## Acknowledgments :clap:
+## License
 
-Credit goes to the documentation and the people involved in writing it. See the **Useful resources** section.
+[MIT License](../LICENSE)

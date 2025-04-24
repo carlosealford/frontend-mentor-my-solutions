@@ -2,19 +2,6 @@
 
 This is a solution to the [Article Preview Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The challenge
@@ -38,10 +25,10 @@ Your users should be able to:
 
 Here are the links to my solution on GitHub and the live page where you can check out the profile card on your browser.
 
-- Solution URL: [Github Repo](https://github.com/webshuriken/frontend-mentor-my-solutions/tree/main/article-preview-component)
-- Live URL: [Four Card Feature](https://webshuriken.github.io/frontend-mentor-my-solutions/article-preview-component/)
+- Solution URL: [Github Repo](https://github.com/carlosealford/frontend-mentor-my-solutions/tree/main/article-preview-component)
+- Live URL: [Four Card Feature](https://carlosealford.github.io/frontend-mentor-my-solutions/article-preview-component/)
 
-## My process :computer:
+## My process
 
 ### Built with
 
@@ -62,12 +49,16 @@ elements and uses the same styles except for the background colour which I passe
 Feeling stronger about my SASS but a little bit more practice is required. Mixins and Partials are there but need 
 to understand better in which situations they are best suited.
 
+## Acknowledgments
+
+To the whole Dev Community, keep dreaming and innovating. Thank you all. :smile:
+
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
 - Frontend Mentor - [CarlosEAM](https://www.frontendmentor.io/profile/WebShuriken)
-- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
+- X (Twitter) - [@webshuriken](https://www.x.com/webshuriken)
 
-## Acknowledgments
+## License
 
-To the whole Dev Community, keep dreaming and innovating. Thank you all. :smile:
+[MIT License](../LICENSE)

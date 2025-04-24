@@ -2,19 +2,6 @@
 
 This is one solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj).
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-
 ## Overview
 
 ### The challenge
@@ -30,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/webshuriken/order-summary-component)
-- Live URL: [Summary Component Site](https://webshuriken.github.io/order-summary-component/)
+- Solution URL: [Github Repo](https://github.com/carlosealford/order-summary-component)
+- Live URL: [Summary Component Site](https://carlosealford.github.io/order-summary-component/)
 
 ## My process
 
@@ -65,8 +52,16 @@ Naming of CSS classes is currently not my strength. Something there is a struggl
 
 - [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Their flexbox reference is fantastic. Has all the information needed.
 
+## Acknowledgments
+
+To the whole Dev Community, keep dreaming and innovating. Thank you all. :smile:
+
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
 - Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
-- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
+- X (Twitter) - [@webshuriken](https://www.x.com/webshuriken)
+
+## License
+
+[MIT License](../LICENSE)

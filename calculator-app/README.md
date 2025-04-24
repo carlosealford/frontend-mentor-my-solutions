@@ -2,20 +2,6 @@
 
 This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The challenge
@@ -33,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/webshuriken/frontend-mentor-my-solutions/calculator-app)
-- Live URL: [Summary Component Site](https://webshuriken.github.io/frontend-mentor-my-solutions/calculator-app/)
+- Solution URL: [Github Repo](https://github.com/carlosealford/frontend-mentor-my-solutions/calculator-app)
+- Live URL: [Summary Component Site](https://carlosealford.github.io/frontend-mentor-my-solutions/calculator-app/)
 
 ## My process
 
@@ -70,13 +56,17 @@ My SASS knowledge has improved a lot but a bit more practice so that I can best 
 
 - [SASS](https://sass-lang.com/guide) - This is a fantastic starting point if you are new to SASS.
 
-## Author
-
-- Website - [Carlos E Alford M](https://carlosealford.com)
-- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
-- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
-
 ## Acknowledgments
 
 I would like to thanks the people maintaining the MDN docs and the SASS docs. They were really helpful. The examples along side the explanations really help to drive the points home.
 Also thank you to the people at frontend mentor for keeping this work going and the new opportunities they have made available.
+
+## Author
+
+- Website - [Carlos E Alford M](https://carlosealford.com)
+- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
+- X (Twitter) - [@webshuriken](https://www.x.com/webshuriken)
+
+## License
+
+[MIT License](../LICENSE)

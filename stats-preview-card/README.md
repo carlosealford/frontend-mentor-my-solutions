@@ -2,20 +2,6 @@
 
 Coding Challenge - Design a Stats preview card component.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The challenge
@@ -42,8 +28,8 @@ Here are two screenshot of the final card.
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/webshuriken/stats-preview-card-component)
-- Live URL: [Stats Preview Card Site](https://webshuriken.github.io/stats-preview-card-component/)
+- Solution URL: [Github Repo](https://github.com/carlosealford/stats-preview-card-component)
+- Live URL: [Stats Preview Card Site](https://carlosealford.github.io/stats-preview-card-component/)
 
 ## My process
 
@@ -102,14 +88,18 @@ Here are some of the items I must further develop:
 
 - [Mozilla Picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - Mozilla with its fantastic docs
 
-## Author
-
-- Website - [Carlos E Alford M](https://carlosealford.com)
-- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
-- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
-
 ## Acknowledgments
 
 - Thanks to [Ahmed Faisal](https://github.com/afrussel) for
 showing me his solution using the `mix-blend-mode` property which helped me to
 match the purple dye in the cards image.
+
+## Author
+
+- Website - [Carlos E Alford M](https://carlosealford.com)
+- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
+- X (Twitter) - [@webshuriken](https://www.x.com/webshuriken)
+
+## License
+
+[MIT License](../LICENSE)

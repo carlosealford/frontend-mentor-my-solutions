@@ -2,20 +2,6 @@
 
 This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ).
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The challenge
@@ -31,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/webshuriken/frontend-mentor-my-solutions/tree/main/social-links-profile)
-- Live Site URL: [Live Site](https://webshuriken.github.io/frontend-mentor-my-solutions/social-links-profile/)
+- Solution URL: [Solution](https://github.com/carlosealford/frontend-mentor-my-solutions/tree/main/social-links-profile)
+- Live Site URL: [Live Site](https://carlosealford.github.io/frontend-mentor-my-solutions/social-links-profile/)
 
 ## My process
 
@@ -55,12 +41,16 @@ It took me a total of **2.2 hours** to setup, create both mobile and large scree
 
 I will continue to do this challenges to improve my time management and predictions.
 
+## Acknowledgments
+
+Thanks to the team behind Frontend Mentor for creating this challenge and all their work.
+
 ## Author
 
 - Website - [Carlos E Alford](https://www.carlosealford.com)
 - Frontend Mentor - [@webshuriken](https://www.frontendmentor.io/profile/webshuriken)
-- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
+- X (Twitter) - [@webshuriken](https://www.x.com/webshuriken)
 
-## Acknowledgments
+## License
 
-Thanks to the team behind Frontend Mentor for creating this challenge and all their work.
+[MIT License](../LICENSE)

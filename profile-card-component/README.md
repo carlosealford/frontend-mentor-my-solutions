@@ -2,21 +2,6 @@
 
 This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ).
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [Setup](#setup)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The challenge
@@ -33,8 +18,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 Here are the links to my solution on GitHub and the live page where you can check out the profile card on your browser.
 
-- Solution URL: [Github Repo](https://github.com/webshuriken/profile-card-component/)
-- Live URL: [Profile Card Component Site](https://webshuriken.github.io/profile-card-component/)
+- Solution URL: [Github Repo](https://github.com/carlosealford/profile-card-component/)
+- Live URL: [Profile Card Component Site](https://carlosealford.github.io/profile-card-component/)
 
 ### Setup
 
@@ -88,15 +73,19 @@ From all the pages I visited **only two** had useful information:
 - [CSS Tricks](https://css-tricks.com/almanac/properties/b/background-position/) pointed out the 4 types of values you can use.
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) explains, in detail, how the values are taken and used by the property.
 
-## Author
-
-- Website - [Carlos E Alford M](https://carlosealford.com)
-- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
-- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
-
 ## Acknowledgments
 
 For all their hard work I say thank you. Your d
 
 - [Chris Coyier @ CSS Tricks](https://css-tricks.com/author/chriscoyier/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
+
+## Author
+
+- Website - [Carlos E Alford M](https://carlosealford.com)
+- Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
+- X (Twitter) - [@webshuriken](https://www.x.com/webshuriken)
+
+## License
+
+[MIT License](../LICENSE)
