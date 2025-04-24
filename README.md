@@ -2,17 +2,6 @@
 
 Here are my solutions to the frontend challenges created by frontend mentor.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [My vision](#my-vision)
-  - [Repo purpose](#repo-purpose)
-- [Solutions](#solutions)
-  - [Newbie](#newbie)
-  - [Junior](#junior)
-  - [Intermediate](#intermediate)
-  - [Advanced](#advanced)
-
 ## Overview
 
 ### My vision :eyes:
@@ -34,24 +23,24 @@ final piece. **Click on an image to view live site.**
 
 ### Newbie
 
-[<img src="./profile-card-component/screenshot.png" width="232" alt="simple profile card">](https://webshuriken.github.io/frontend-mentor-my-solutions/profile-card-component/)
-[<img src="./order-summary-component/screenshot.png" width="232" alt="a card showing the summary of a transaction">](https://webshuriken.github.io/frontend-mentor-my-solutions/order-summary-component/)
-[<img src="./stats-preview-card/screenshot.png" width="232" alt="card to display stats preview">](https://webshuriken.github.io/frontend-mentor-my-solutions/stats-preview-card/)
-[<img src="./3-column-preview-card/screenshot.png" width="232" alt="section of three cards showing different products">](https://webshuriken.github.io/frontend-mentor-my-solutions/3-column-preview-card/)
-[<img src="./social-proof-section/screenshot.png" width="232" alt="section of site showing review comments with star rating and review cards">](https://webshuriken.github.io/frontend-mentor-my-solutions/social-proof-section/)
-[<img src="./four-card-feature/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/four-card-feature/)
-[<img src="./article-preview-component/screenshot.png" width="232" alt="section that shows four cards with solution ideas">](https://webshuriken.github.io/frontend-mentor-my-solutions/article-preview-component/)
-[<img src="./base-apparel-coming-soon-master/screenshot.png" width="232" alt="card with image to the left and content on the right">](https://webshuriken.github.io/frontend-mentor-my-solutions/base-apparel-coming-soon-master/)
-[<img src="./social-links-profile/screenshot.png" width="232" alt="social links card with profile image at the top and link buttons at the bottom">](https://webshuriken.github.io/frontend-mentor-my-solutions/social-links-profile)
+[<img src="./profile-card-component/screenshot.png" width="232" alt="simple profile card">](https://carlosealford.github.io/frontend-mentor-my-solutions/profile-card-component/)
+[<img src="./order-summary-component/screenshot.png" width="232" alt="a card showing the summary of a transaction">](https://carlosealford.github.io/frontend-mentor-my-solutions/order-summary-component/)
+[<img src="./stats-preview-card/screenshot.png" width="232" alt="card to display stats preview">](https://carlosealford.github.io/frontend-mentor-my-solutions/stats-preview-card/)
+[<img src="./3-column-preview-card/screenshot.png" width="232" alt="section of three cards showing different products">](https://carlosealford.github.io/frontend-mentor-my-solutions/3-column-preview-card/)
+[<img src="./social-proof-section/screenshot.png" width="232" alt="section of site showing review comments with star rating and review cards">](https://carlosealford.github.io/frontend-mentor-my-solutions/social-proof-section/)
+[<img src="./four-card-feature/screenshot.png" width="232" alt="something to show">](https://carlosealford.github.io/frontend-mentor-my-solutions/four-card-feature/)
+[<img src="./article-preview-component/screenshot.png" width="232" alt="section that shows four cards with solution ideas">](https://carlosealford.github.io/frontend-mentor-my-solutions/article-preview-component/)
+[<img src="./base-apparel-coming-soon-master/screenshot.png" width="232" alt="card with image to the left and content on the right">](https://carlosealford.github.io/frontend-mentor-my-solutions/base-apparel-coming-soon-master/)
+[<img src="./social-links-profile/screenshot.png" width="232" alt="social links card with profile image at the top and link buttons at the bottom">](https://carlosealford.github.io/frontend-mentor-my-solutions/social-links-profile)
 
 ### Junior
 
-[<img src="./tip-calculator/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/tip-calculator/)
-[<img src="./time-tracking-dashboard/screenshot.png" width="232" alt="something to show">](https://webshuriken.github.io/frontend-mentor-my-solutions/time-tracking-dashboard/dist/)
+[<img src="./tip-calculator/screenshot.png" width="232" alt="something to show">](https://carlosealford.github.io/frontend-mentor-my-solutions/tip-calculator/)
+[<img src="./time-tracking-dashboard/screenshot.png" width="232" alt="something to show">](https://carlosealford.github.io/frontend-mentor-my-solutions/time-tracking-dashboard/dist/)
 
 ### Intermediate
 
-[<img src="./calculator-app/screenshot.png" width="232" alt="calculator app screenshot">](https://webshuriken.github.io/frontend-mentor-my-solutions/calculator-app/)
+[<img src="./calculator-app/screenshot.png" width="232" alt="calculator app screenshot">](https://carlosealford.github.io/frontend-mentor-my-solutions/calculator-app/)
 [<img src="https://github.com/webshuriken/space-tourism-website/blob/main/screenshot.png" width="232" alt="space tourism screenshot">](https://webshuriken.github.io/space-tourism-website/)
 
 ### Advanced
@@ -76,3 +65,7 @@ are rendered inline.
 <img src="" width="" height="">
 <img src="" width="" height="">
 ```
+
+## License
+
+[MIT License](LICENSE)

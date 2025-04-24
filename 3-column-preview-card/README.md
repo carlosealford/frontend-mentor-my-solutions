@@ -2,19 +2,6 @@
 
 My solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [Setup](#setup)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
 
 ## Overview 👋
 
@@ -31,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/webshuriken/3-column-preview-card)
-- Live URL: [3 Columns Preview Site](https://webshuriken.github.io/3-column-preview-card/)
+- Solution URL: [Github Repo](https://github.com/carlosealford/3-column-preview-card)
+- Live URL: [3 Columns Preview Site](https://carlosealford.github.io/3-column-preview-card/)
 
 ## Setup
 
@@ -70,8 +57,16 @@ HTML and CSS are getting stronger but I still feel that my SASS needs some more 
 
 - [SASS parent selector](https://sass-lang.com/documentation/style-rules/parent-selector) - This helped understand how to use pseudo-classes in SASS.
 
+## Acknowledgments
+
+To the whole Dev Community, keep dreaming and innovating. Thank you all. :smile:
+
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
 - Frontend Mentor - [WebShuriken](https://www.frontendmentor.io/profile/WebShuriken)
-- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
+- X (Twitter) - [@webshuriken](https://www.x.com/webshuriken)
+
+## License
+
+[MIT License](../LICENSE)

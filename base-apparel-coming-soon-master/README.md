@@ -2,19 +2,6 @@
 
 This is a solution to the [Article Preview Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0/hub/base-apparel-coming-soon-page-Kuv6WZdD1). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The challenge
@@ -37,8 +24,8 @@ Your users should be able to:
 
 Here are the links to my solution on GitHub and the live page where you can check out the profile card on your browser.
 
-- Solution URL: [Github Repo](https://github.com/webshuriken/frontend-mentor-my-solutions/tree/main/base-apparel-coming-soon-master)
-- Live URL: [Four Card Feature](https://webshuriken.github.io/frontend-mentor-my-solutions/base-apparel-coming-soon-master/)
+- Solution URL: [Github Repo](https://github.com/carlosealford/frontend-mentor-my-solutions/tree/main/base-apparel-coming-soon-master)
+- Live URL: [Four Card Feature](https://carlosealford.github.io/frontend-mentor-my-solutions/base-apparel-coming-soon-master/)
 
 ## My process :computer:
 
@@ -59,12 +46,16 @@ This challenge was not hard but I did learn more about accessibility!. I learned
 
 Accessibility! Ay11 is there to help where there is no semantic HTML to do the job.
 
+## Acknowledgments
+
+To the whole Dev Community, keep dreaming and innovating. Thank you all. :smile:
+
 ## Author
 
 - Website - [Carlos E Alford M](https://carlosealford.com)
 - Frontend Mentor - [CarlosEAM](https://www.frontendmentor.io/profile/WebShuriken)
-- Twitter - [@webshuriken](https://www.twitter.com/webshuriken)
+- X (Twitter) - [@webshuriken](https://www.x.com/webshuriken)
 
-## Acknowledgments
+## License
 
-To the whole Dev Community, keep dreaming and innovating. Thank you all. :smile:
+[MIT License](../LICENSE)
