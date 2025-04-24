@@ -65,3 +65,7 @@ are rendered inline.
 <img src="" width="" height="">
 <img src="" width="" height="">
 ```
+
+## License
+
+[MIT License](LICENSE)
